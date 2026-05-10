@@ -5,6 +5,8 @@ from typing import Any
 
 import httpx
 
+from ._http import default_transport
+
 _WRIKE_ID_RE = re.compile(r"^[A-Za-z0-9]+$")
 TASK_ID_BATCH = 100
 DEFAULT_PAGE_SIZE = 1000
@@ -30,7 +32,7 @@ class WrikeClient:
             base_url=base_url,
             headers={"Authorization": f"Bearer {token}"},
             timeout=timeout,
-            transport=transport,
+            transport=transport if transport is not None else default_transport(),
         )
 
     def close(self) -> None:

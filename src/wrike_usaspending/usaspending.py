@@ -4,6 +4,8 @@ from typing import Any, Iterator
 
 import httpx
 
+from ._http import default_transport
+
 CONTRACT_CODES = ["A", "B", "C", "D"]
 GRANT_CODES = ["02", "03", "04", "05"]
 LOAN_CODES = ["07", "08"]
@@ -35,7 +37,11 @@ class USASpendingClient:
         timeout: float = 30.0,
         transport: httpx.BaseTransport | None = None,
     ) -> None:
-        self._http = httpx.Client(base_url=base_url, timeout=timeout, transport=transport)
+        self._http = httpx.Client(
+            base_url=base_url,
+            timeout=timeout,
+            transport=transport if transport is not None else default_transport(),
+        )
 
     def close(self) -> None:
         self._http.close()
