@@ -5,7 +5,7 @@ import json
 import sys
 
 from .config import load_config
-from .sync import sync_folder, sync_task
+from .sync import sync_folder, sync_space, sync_task
 from .usaspending import USASpendingClient
 from .wrike import WrikeClient
 
@@ -22,6 +22,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="List all Wrike custom fields (use to find your UEI field id/title)",
     )
 
+    sub.add_parser(
+        "list-spaces",
+        help="List all Wrike spaces (use to find a space ID for sync-space)",
+    )
+
     s_task = sub.add_parser("sync-task", help="Sync a single Wrike task by ID")
     s_task.add_argument("task_id")
     s_task.add_argument("--dry-run", action="store_true")
@@ -31,6 +36,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     s_folder.add_argument("folder_id")
     s_folder.add_argument("--dry-run", action="store_true")
+
+    s_space = sub.add_parser(
+        "sync-space", help="Sync every task across an entire Wrike space"
+    )
+    s_space.add_argument("space_id")
+    s_space.add_argument("--dry-run", action="store_true")
 
     return p
 
@@ -51,6 +62,15 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 0
 
+        if args.cmd == "list-spaces":
+            spaces = wrike.list_spaces()
+            print(
+                json.dumps(
+                    [{"id": s["id"], "title": s.get("title")} for s in spaces], indent=2
+                )
+            )
+            return 0
+
         uei_field_id = wrike.find_custom_field_id(cfg.wrike_uei_field_name)
 
         if args.cmd == "sync-task":
@@ -66,6 +86,15 @@ def main(argv: list[str] | None = None) -> int:
             print(
                 json.dumps(
                     sync_folder(wrike, usa, args.folder_id, uei_field_id, dry_run=args.dry_run),
+                    indent=2,
+                )
+            )
+            return 0
+
+        if args.cmd == "sync-space":
+            print(
+                json.dumps(
+                    sync_space(wrike, usa, args.space_id, uei_field_id, dry_run=args.dry_run),
                     indent=2,
                 )
             )

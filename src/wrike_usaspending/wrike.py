@@ -45,10 +45,40 @@ class WrikeClient:
         )
 
     def list_folder_tasks(self, folder_id: str) -> list[dict[str, Any]]:
-        params = {"fields": "[customFields,parentIds,subTaskIds]"}
-        r = self._http.get(f"/folders/{folder_id}/tasks", params=params)
+        results: list[dict[str, Any]] = []
+        next_token: str | None = None
+        while True:
+            if next_token:
+                params: dict[str, Any] = {"nextPageToken": next_token}
+            else:
+                params = {
+                    "fields": "[customFields,parentIds,subTaskIds]",
+                    "pageSize": 1000,
+                }
+            r = self._http.get(f"/folders/{folder_id}/tasks", params=params)
+            r.raise_for_status()
+            payload = r.json()
+            results.extend(payload.get("data") or [])
+            next_token = payload.get("nextPageToken")
+            if not next_token:
+                return results
+
+    def list_spaces(self) -> list[dict[str, Any]]:
+        r = self._http.get("/spaces")
         r.raise_for_status()
         return r.json().get("data") or []
+
+    def list_space_folders(self, space_id: str) -> list[dict[str, Any]]:
+        r = self._http.get(f"/spaces/{space_id}/folders", params={"descendants": "true"})
+        r.raise_for_status()
+        return r.json().get("data") or []
+
+    def list_space_tasks(self, space_id: str) -> list[dict[str, Any]]:
+        seen: dict[str, dict[str, Any]] = {}
+        for folder in self.list_space_folders(space_id):
+            for task in self.list_folder_tasks(folder["id"]):
+                seen[task["id"]] = task
+        return list(seen.values())
 
     def get_task(self, task_id: str) -> dict[str, Any]:
         params = {"fields": "[customFields,parentIds,subTaskIds]"}

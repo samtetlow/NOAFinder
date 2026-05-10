@@ -41,19 +41,50 @@ Discover the ID of your "uei" custom field (and confirm the name matches):
 wrike-usaspending list-custom-fields
 ```
 
+List your Wrike spaces (to find the space ID for `sync-space`):
+
+```bash
+wrike-usaspending list-spaces
+```
+
+Sync every task across an entire Wrike space — pulls all awards for every client task with a UEI:
+
+```bash
+wrike-usaspending sync-space IEAA7BPMI4XXXXXX
+```
+
+Sync every task in a single Wrike folder/project:
+
+```bash
+wrike-usaspending sync-folder IEAA7BPMI4XXXXXX
+```
+
 Sync a single Wrike task by ID:
 
 ```bash
 wrike-usaspending sync-task IEAA7BPMI4XXXXXX
 ```
 
-Sync every task in a Wrike folder/project:
+Add `--dry-run` to any sync command to preview without creating subtasks.
+
+### Pull all awards for every client (typical run)
 
 ```bash
-wrike-usaspending sync-folder IEAA7BPMI4XXXXXX
+# 1. one-time setup
+cp .env.example .env  # then paste your WRIKE_TOKEN
+pip install -e ".[dev]"
+
+# 2. discover the space that holds your client tasks
+wrike-usaspending list-spaces
+
+# 3. preview, then run for real
+wrike-usaspending sync-space <SPACE_ID> --dry-run
+wrike-usaspending sync-space <SPACE_ID>
 ```
 
-Add `--dry-run` to preview without creating subtasks.
+`sync-space` walks every descendant folder in the space, dedupes tasks
+(a task can live in multiple folders), and runs the per-task sync. Tasks
+without a UEI value are reported with `skipped: true` and otherwise left alone.
 
 Output is JSON with `awards_found`, `subtasks_created`, and `subtasks_skipped_existing`.
 

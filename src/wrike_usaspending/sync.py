@@ -159,3 +159,16 @@ def sync_folder(
         sync_task(wrike, usa, t["id"], uei_field_id, dry_run=dry_run)
         for t in wrike.list_folder_tasks(folder_id)
     ]
+
+
+def sync_space(
+    wrike: WrikeClient,
+    usa: USASpendingClient,
+    space_id: str,
+    uei_field_id: str,
+    dry_run: bool = False,
+) -> list[dict[str, Any]]:
+    return [
+        sync_task(wrike, usa, t["id"], uei_field_id, dry_run=dry_run)
+        for t in wrike.list_space_tasks(space_id)
+    ]
