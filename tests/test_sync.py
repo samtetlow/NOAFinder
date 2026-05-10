@@ -1,5 +1,6 @@
 from wrike_usaspending.sync import (
     AwardSummary,
+    DESCRIPTION_MAX_CHARS,
     existing_award_ids,
     format_subtask_description,
     format_subtask_title,
@@ -24,9 +25,8 @@ def test_normalize_award_parses_string_money():
     assert a.award_id == "ABC-123"
     assert a.title == "Acme Inc"
     assert a.total_amount == 12345.67
-    assert a.outlayed_amount == 5000.0
+    assert a.outlay_amount == 5000.0
     assert a.award_date == "2024-01-15"
-    assert a.generated_internal_id == "CONT_AWD_X"
 
 
 def test_normalize_award_handles_missing_and_bad_values():
@@ -34,7 +34,7 @@ def test_normalize_award_handles_missing_and_bad_values():
     assert a.award_id == ""
     assert a.title == "Award"
     assert a.total_amount is None
-    assert a.outlayed_amount is None
+    assert a.outlay_amount is None
 
 
 def test_normalize_award_falls_back_to_generated_internal_id():
@@ -43,14 +43,14 @@ def test_normalize_award_falls_back_to_generated_internal_id():
 
 
 def test_format_subtask_title_includes_id_and_money():
-    a = AwardSummary("X-1", "T", "2024-01-01", 1000.0, None, None, None, None, None)
+    a = AwardSummary("X-1", "T", "2024-01-01", 1000.0, None, None, None, None)
     title = format_subtask_title(a)
     assert "X-1" in title
     assert "$1,000.00" in title
 
 
 def test_format_subtask_title_handles_unknown_amount():
-    a = AwardSummary("X-1", "T", None, None, None, None, None, None, None)
+    a = AwardSummary("X-1", "T", None, None, None, None, None, None)
     assert "Unknown amount" in format_subtask_title(a)
 
 
@@ -60,11 +60,10 @@ def test_format_subtask_description_includes_all_fields_and_escapes():
         title="Recipient",
         award_date="2024-01-01",
         total_amount=1000.0,
-        outlayed_amount=250.5,
+        outlay_amount=250.5,
         award_type="Contract",
         awarding_agency="DOD",
         description="Build a thing & <test>",
-        generated_internal_id=None,
     )
     desc = format_subtask_description(a)
     assert "X-1" in desc
@@ -74,6 +73,22 @@ def test_format_subtask_description_includes_all_fields_and_escapes():
     assert "DOD" in desc
     assert "Build a thing &amp; &lt;test&gt;" in desc
     assert "<test>" not in desc
+
+
+def test_format_subtask_description_truncates_long_text():
+    a = AwardSummary(
+        award_id="X-1",
+        title="R",
+        award_date=None,
+        total_amount=None,
+        outlay_amount=None,
+        award_type=None,
+        awarding_agency=None,
+        description="x" * (DESCRIPTION_MAX_CHARS * 2),
+    )
+    desc = format_subtask_description(a)
+    assert len(desc) == DESCRIPTION_MAX_CHARS
+    assert desc.endswith("…[truncated]")
 
 
 def test_existing_award_ids_extracts_from_titles():
