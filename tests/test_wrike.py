@@ -3,7 +3,7 @@ import json
 import httpx
 import pytest
 
-from wrike_usaspending.wrike import TASK_ID_BATCH, WrikeClient
+from noa_finder.wrike import TASK_ID_BATCH, WrikeClient
 
 
 def _client(handler):

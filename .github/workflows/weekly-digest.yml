@@ -1,0 +1,57 @@
+name: Weekly NOA digest
+
+on:
+  schedule:
+    # Mondays 13:00 UTC = 9 AM ET (EDT) / 8 AM ET (EST). Edit to taste.
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      space_id:
+        description: "Wrike space ID (overrides WRIKE_SPACE_ID secret)"
+        required: false
+        type: string
+      dry_run:
+        description: "Skip Wrike subtask creation (still sends digest)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run weekly digest
+        env:
+          WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
+          WRIKE_UEI_FIELD_NAME: ${{ vars.WRIKE_UEI_FIELD_NAME }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ vars.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_USE_TLS: ${{ vars.SMTP_USE_TLS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          DIGEST_TIMEZONE: ${{ vars.DIGEST_TIMEZONE }}
+          DIGEST_SEND_WHEN_EMPTY: ${{ vars.DIGEST_SEND_WHEN_EMPTY }}
+          SPACE_ID: ${{ inputs.space_id || secrets.WRIKE_SPACE_ID }}
+          DRY_RUN_FLAG: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: noa-finder weekly-digest "$SPACE_ID" $DRY_RUN_FLAG

@@ -2,7 +2,7 @@ import json
 
 import httpx
 
-from wrike_usaspending.usaspending import USASpendingClient
+from noa_finder.usaspending import USASpendingClient
 
 
 def _client(handler):

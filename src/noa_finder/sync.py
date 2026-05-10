@@ -21,6 +21,7 @@ class AwardSummary:
     award_type: str | None
     awarding_agency: str | None
     description: str | None
+    generated_internal_id: str | None
 
 
 def _to_float(v: Any) -> float | None:
@@ -42,7 +43,27 @@ def normalize_award(raw: dict[str, Any]) -> AwardSummary:
         award_type=raw.get("Award Type"),
         awarding_agency=raw.get("Awarding Agency"),
         description=raw.get("Description"),
+        generated_internal_id=raw.get("generated_internal_id"),
     )
+
+
+def usaspending_award_url(generated_internal_id: str | None) -> str | None:
+    if not generated_internal_id:
+        return None
+    return f"https://www.usaspending.gov/award/{generated_internal_id}/"
+
+
+def award_to_dict(award: AwardSummary) -> dict[str, Any]:
+    return {
+        "award_id": award.award_id,
+        "title": award.title,
+        "total_amount": award.total_amount,
+        "outlay_amount": award.outlay_amount,
+        "awarding_agency": award.awarding_agency,
+        "award_type": award.award_type,
+        "generated_internal_id": award.generated_internal_id,
+        "url": usaspending_award_url(award.generated_internal_id),
+    }
 
 
 def _money(v: float | None) -> str:
@@ -134,6 +155,7 @@ def existing_award_ids(
 def _empty_result(task_id: str, dry_run: bool) -> dict[str, Any]:
     return {
         "task_id": task_id,
+        "task_title": None,
         "uei": None,
         "skipped": False,
         "reason": None,
@@ -141,6 +163,7 @@ def _empty_result(task_id: str, dry_run: bool) -> dict[str, Any]:
         "subtasks_created": 0,
         "subtasks_skipped_existing": 0,
         "subtasks_skipped_no_id": 0,
+        "created_awards": [],
         "dry_run": dry_run,
     }
 
@@ -159,6 +182,7 @@ def sync_task(
 
     if task is None:
         task = wrike.get_task(task_id)
+    result["task_title"] = task.get("title")
 
     uei = get_uei_from_task(task, uei_field_id)
     if not uei:
@@ -186,6 +210,7 @@ def sync_task(
             continue
         if dry_run:
             result["subtasks_created"] += 1
+            result["created_awards"].append(award_to_dict(award))
             existing_ids.add(award.award_id)
             continue
         custom_fields = (
@@ -202,6 +227,7 @@ def sync_task(
         )
         existing_ids.add(award.award_id)
         result["subtasks_created"] += 1
+        result["created_awards"].append(award_to_dict(award))
 
     return result
 

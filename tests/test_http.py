@@ -1,6 +1,6 @@
 import httpx
 
-from wrike_usaspending._http import RetryTransport
+from noa_finder._http import RetryTransport
 
 
 def _client_with_retry(handler, **kwargs):

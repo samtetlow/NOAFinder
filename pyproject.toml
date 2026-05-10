@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wrike-usaspending"
+name = "noa-finder"
 version = "0.1.0"
-description = "Sync USASpending.gov award data into Wrike using the recipient UEI custom field."
+description = "NOA Finder by Grant Engine: pull federal awards from USASpending.gov by recipient UEI and surface them in Wrike, with weekly Slack + email digests."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-wrike-usaspending = "wrike_usaspending.cli:main"
+noa-finder = "noa_finder.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

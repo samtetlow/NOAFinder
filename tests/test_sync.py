@@ -1,11 +1,13 @@
-from wrike_usaspending.sync import (
+from noa_finder.sync import (
     AwardSummary,
     DESCRIPTION_MAX_CHARS,
+    award_to_dict,
     existing_award_ids,
     format_subtask_description,
     format_subtask_title,
     get_uei_from_task,
     normalize_award,
+    usaspending_award_url,
 )
 
 
@@ -27,6 +29,7 @@ def test_normalize_award_parses_string_money():
     assert a.total_amount == 12345.67
     assert a.outlay_amount == 5000.0
     assert a.award_date == "2024-01-15"
+    assert a.generated_internal_id == "CONT_AWD_X"
 
 
 def test_normalize_award_handles_missing_and_bad_values():
@@ -43,14 +46,14 @@ def test_normalize_award_falls_back_to_generated_internal_id():
 
 
 def test_format_subtask_title_includes_id_and_money():
-    a = AwardSummary("X-1", "T", "2024-01-01", 1000.0, None, None, None, None)
+    a = AwardSummary("X-1", "T", "2024-01-01", 1000.0, None, None, None, None, None)
     title = format_subtask_title(a)
     assert "X-1" in title
     assert "$1,000.00" in title
 
 
 def test_format_subtask_title_handles_unknown_amount():
-    a = AwardSummary("X-1", "T", None, None, None, None, None, None)
+    a = AwardSummary("X-1", "T", None, None, None, None, None, None, None)
     assert "Unknown amount" in format_subtask_title(a)
 
 
@@ -64,6 +67,7 @@ def test_format_subtask_description_includes_all_fields_and_escapes():
         award_type="Contract",
         awarding_agency="DOD",
         description="Build a thing & <test>",
+        generated_internal_id="CONT_AWD_X",
     )
     desc = format_subtask_description(a)
     assert "X-1" in desc
@@ -85,6 +89,7 @@ def test_format_subtask_description_truncates_long_text():
         award_type=None,
         awarding_agency=None,
         description="x" * (DESCRIPTION_MAX_CHARS * 2),
+        generated_internal_id=None,
     )
     desc = format_subtask_description(a)
     assert len(desc) == DESCRIPTION_MAX_CHARS
@@ -142,3 +147,47 @@ def test_get_uei_from_task_returns_none_when_empty_or_missing():
     assert get_uei_from_task({"customFields": []}, "F1") is None
     assert get_uei_from_task({"customFields": [{"id": "F1", "value": ""}]}, "F1") is None
     assert get_uei_from_task({}, "F1") is None
+
+
+def test_usaspending_award_url():
+    assert (
+        usaspending_award_url("CONT_AWD_X")
+        == "https://www.usaspending.gov/award/CONT_AWD_X/"
+    )
+    assert usaspending_award_url(None) is None
+    assert usaspending_award_url("") is None
+
+
+def test_award_to_dict_includes_url_when_internal_id_present():
+    a = AwardSummary(
+        award_id="X-1",
+        title="Acme",
+        award_date=None,
+        total_amount=1000.0,
+        outlay_amount=500.0,
+        award_type="Contract",
+        awarding_agency="DOD",
+        description=None,
+        generated_internal_id="CONT_AWD_X",
+    )
+    d = award_to_dict(a)
+    assert d["url"] == "https://www.usaspending.gov/award/CONT_AWD_X/"
+    assert d["award_id"] == "X-1"
+    assert d["total_amount"] == 1000.0
+    assert d["outlay_amount"] == 500.0
+    assert d["awarding_agency"] == "DOD"
+
+
+def test_award_to_dict_omits_url_when_internal_id_missing():
+    a = AwardSummary(
+        award_id="X-1",
+        title="Acme",
+        award_date=None,
+        total_amount=None,
+        outlay_amount=None,
+        award_type=None,
+        awarding_agency=None,
+        description=None,
+        generated_internal_id=None,
+    )
+    assert award_to_dict(a)["url"] is None

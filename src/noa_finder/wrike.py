@@ -55,7 +55,7 @@ class WrikeClient:
             if str(cf.get("title", "")).strip().lower() == target:
                 return cf["id"]
         raise LookupError(
-            f"Wrike custom field '{name}' not found. Run `wrike-usaspending list-custom-fields` "
+            f"Wrike custom field '{name}' not found. Run `noa-finder list-custom-fields` "
             "to see the available fields."
         )
 
