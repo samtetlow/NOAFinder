@@ -103,8 +103,10 @@ For each award returned by USASpending, a subtask is created under the parent ta
   - Awarding Agency
   - Description / Abstract
 
-The `[USASpending]` prefix and Award ID in the title are how the sync detects already-imported
-awards on subsequent runs.
+Each subtask also has its Award ID stored in a Wrike text custom field called
+**`USASpending Award ID`**. The sync auto-creates this field on first run if it
+doesn't already exist, and uses it (preferred) plus the title prefix (fallback)
+to detect already-imported awards on subsequent runs.
 
 ## Tests
 

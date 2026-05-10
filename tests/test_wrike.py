@@ -72,6 +72,66 @@ def test_create_subtask_raises_on_empty_data_response():
         c.create_subtask("T1", title="x", description="y", folder_id="F1")
 
 
+def test_create_subtask_includes_custom_fields_when_provided():
+    captured: dict = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        captured["body"] = json.loads(request.content.decode())
+        return httpx.Response(200, json={"data": [{"id": "NEW"}]})
+
+    with _client(handler) as c:
+        c.create_subtask(
+            "T1",
+            title="t",
+            description="d",
+            folder_id="F1",
+            custom_fields=[{"id": "AID", "value": "X-1"}],
+        )
+
+    assert captured["body"]["customFields"] == [{"id": "AID", "value": "X-1"}]
+
+
+def test_create_subtask_omits_custom_fields_when_none():
+    captured: dict = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        captured["body"] = json.loads(request.content.decode())
+        return httpx.Response(200, json={"data": [{"id": "NEW"}]})
+
+    with _client(handler) as c:
+        c.create_subtask("T1", title="t", description="d", folder_id="F1")
+
+    assert "customFields" not in captured["body"]
+
+
+def test_ensure_custom_field_returns_existing_id():
+    def handler(request: httpx.Request) -> httpx.Response:
+        assert request.method == "GET"
+        return httpx.Response(
+            200, json={"data": [{"id": "EXISTING", "title": "USASpending Award ID"}]}
+        )
+
+    with _client(handler) as c:
+        assert c.ensure_custom_field("USASpending Award ID") == "EXISTING"
+
+
+def test_ensure_custom_field_creates_when_missing():
+    posted: dict = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.method == "GET":
+            return httpx.Response(200, json={"data": []})
+        if request.method == "POST" and request.url.path.endswith("/customfields"):
+            posted["body"] = json.loads(request.content.decode())
+            return httpx.Response(200, json={"data": [{"id": "NEWFIELD"}]})
+        return httpx.Response(404)
+
+    with _client(handler) as c:
+        assert c.ensure_custom_field("USASpending Award ID") == "NEWFIELD"
+
+    assert posted["body"] == {"title": "USASpending Award ID", "type": "Text"}
+
+
 def test_validates_wrike_ids_at_url_boundaries():
     def handler(request):  # pragma: no cover - should never be called
         raise AssertionError("HTTP should not be called for invalid IDs")

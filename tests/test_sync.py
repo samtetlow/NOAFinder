@@ -101,6 +101,33 @@ def test_existing_award_ids_extracts_from_titles():
     assert existing_award_ids(subs) == {"ABC-1", "DEF-2"}
 
 
+def test_existing_award_ids_prefers_custom_field_over_title():
+    subs = [
+        {
+            "title": "[USASpending] WRONG-1 — $100",
+            "customFields": [{"id": "AID", "value": "RIGHT-1"}],
+        },
+        {
+            "title": "[USASpending] FROMTITLE-2 — $200",
+            "customFields": [{"id": "OTHER", "value": "x"}],
+        },
+    ]
+    assert existing_award_ids(subs, award_id_field_id="AID") == {
+        "RIGHT-1",
+        "FROMTITLE-2",
+    }
+
+
+def test_existing_award_ids_falls_back_to_title_when_custom_field_empty():
+    subs = [
+        {
+            "title": "[USASpending] FALLBACK-1 — $100",
+            "customFields": [{"id": "AID", "value": ""}],
+        },
+    ]
+    assert existing_award_ids(subs, award_id_field_id="AID") == {"FALLBACK-1"}
+
+
 def test_get_uei_from_task_returns_value_when_match():
     task = {
         "customFields": [

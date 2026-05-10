@@ -5,7 +5,7 @@ import json
 import sys
 
 from .config import load_config
-from .sync import sync_folder, sync_space, sync_task
+from .sync import AWARD_ID_FIELD_TITLE, sync_folder, sync_space, sync_task
 from .usaspending import USASpendingClient
 from .wrike import WrikeClient
 
@@ -72,11 +72,19 @@ def main(argv: list[str] | None = None) -> int:
             return 0
 
         uei_field_id = wrike.find_custom_field_id(cfg.wrike_uei_field_name)
+        award_id_field_id = wrike.ensure_custom_field(AWARD_ID_FIELD_TITLE)
 
         if args.cmd == "sync-task":
             print(
                 json.dumps(
-                    sync_task(wrike, usa, args.task_id, uei_field_id, dry_run=args.dry_run),
+                    sync_task(
+                        wrike,
+                        usa,
+                        args.task_id,
+                        uei_field_id,
+                        dry_run=args.dry_run,
+                        award_id_field_id=award_id_field_id,
+                    ),
                     indent=2,
                 )
             )
@@ -85,7 +93,14 @@ def main(argv: list[str] | None = None) -> int:
         if args.cmd == "sync-folder":
             print(
                 json.dumps(
-                    sync_folder(wrike, usa, args.folder_id, uei_field_id, dry_run=args.dry_run),
+                    sync_folder(
+                        wrike,
+                        usa,
+                        args.folder_id,
+                        uei_field_id,
+                        dry_run=args.dry_run,
+                        award_id_field_id=award_id_field_id,
+                    ),
                     indent=2,
                 )
             )
@@ -94,7 +109,14 @@ def main(argv: list[str] | None = None) -> int:
         if args.cmd == "sync-space":
             print(
                 json.dumps(
-                    sync_space(wrike, usa, args.space_id, uei_field_id, dry_run=args.dry_run),
+                    sync_space(
+                        wrike,
+                        usa,
+                        args.space_id,
+                        uei_field_id,
+                        dry_run=args.dry_run,
+                        award_id_field_id=award_id_field_id,
+                    ),
                     indent=2,
                 )
             )

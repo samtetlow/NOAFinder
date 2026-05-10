@@ -59,6 +59,21 @@ class WrikeClient:
             "to see the available fields."
         )
 
+    def ensure_custom_field(self, title: str, field_type: str = "Text") -> str:
+        try:
+            return self.find_custom_field_id(title)
+        except LookupError:
+            r = self._http.post(
+                "/customfields", json={"title": title, "type": field_type}
+            )
+            r.raise_for_status()
+            data = r.json().get("data") or []
+            if not data:
+                raise RuntimeError(
+                    f"Wrike returned no data after creating custom field {title!r}"
+                )
+            return data[0]["id"]
+
     def list_folder_tasks(self, folder_id: str) -> list[dict[str, Any]]:
         _validate_wrike_id(folder_id, "folder_id")
         results: list[dict[str, Any]] = []
@@ -151,6 +166,7 @@ class WrikeClient:
         title: str,
         description: str,
         folder_id: str | None = None,
+        custom_fields: list[dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
         _validate_wrike_id(parent_task_id, "task_id")
         if folder_id is None:
@@ -168,6 +184,8 @@ class WrikeClient:
             "description": description,
             "superTasks": [parent_task_id],
         }
+        if custom_fields:
+            body["customFields"] = custom_fields
         r = self._http.post(f"/folders/{folder_id}/tasks", json=body)
         r.raise_for_status()
         data = r.json().get("data") or []

@@ -7,6 +7,7 @@ from .usaspending import USASpendingClient
 from .wrike import WrikeClient
 
 SUBTASK_PREFIX = "[USASpending]"
+AWARD_ID_FIELD_TITLE = "USASpending Award ID"
 DESCRIPTION_MAX_CHARS = 30000
 
 
@@ -104,12 +105,30 @@ def _award_id_from_title(title: str) -> str | None:
     return aid if aid and aid != "(no id)" else None
 
 
-def existing_award_ids(subtasks: list[dict[str, Any]]) -> set[str]:
-    return {
-        aid
-        for t in subtasks
-        if (aid := _award_id_from_title(str(t.get("title") or "")))
-    }
+def _award_id_from_custom_field(
+    task: dict[str, Any], field_id: str
+) -> str | None:
+    for cf in task.get("customFields") or []:
+        if cf.get("id") == field_id:
+            value = str(cf.get("value") or "").strip()
+            return value or None
+    return None
+
+
+def existing_award_ids(
+    subtasks: list[dict[str, Any]],
+    award_id_field_id: str | None = None,
+) -> set[str]:
+    ids: set[str] = set()
+    for t in subtasks:
+        aid: str | None = None
+        if award_id_field_id:
+            aid = _award_id_from_custom_field(t, award_id_field_id)
+        if not aid:
+            aid = _award_id_from_title(str(t.get("title") or ""))
+        if aid:
+            ids.add(aid)
+    return ids
 
 
 def _empty_result(task_id: str, dry_run: bool) -> dict[str, Any]:
@@ -134,6 +153,7 @@ def sync_task(
     dry_run: bool = False,
     *,
     task: dict[str, Any] | None = None,
+    award_id_field_id: str | None = None,
 ) -> dict[str, Any]:
     result = _empty_result(task_id, dry_run)
 
@@ -151,7 +171,8 @@ def sync_task(
     folder_id = folder_ids[0] if folder_ids else None
 
     existing_ids = existing_award_ids(
-        wrike.list_subtasks(task_id, parent_task=task)
+        wrike.list_subtasks(task_id, parent_task=task),
+        award_id_field_id=award_id_field_id,
     )
 
     for raw in usa.search_awards_by_uei(uei):
@@ -167,11 +188,17 @@ def sync_task(
             result["subtasks_created"] += 1
             existing_ids.add(award.award_id)
             continue
+        custom_fields = (
+            [{"id": award_id_field_id, "value": award.award_id}]
+            if award_id_field_id
+            else None
+        )
         wrike.create_subtask(
             parent_task_id=task_id,
             title=format_subtask_title(award),
             description=format_subtask_description(award),
             folder_id=folder_id,
+            custom_fields=custom_fields,
         )
         existing_ids.add(award.award_id)
         result["subtasks_created"] += 1
@@ -185,9 +212,19 @@ def sync_folder(
     folder_id: str,
     uei_field_id: str,
     dry_run: bool = False,
+    *,
+    award_id_field_id: str | None = None,
 ) -> list[dict[str, Any]]:
     return [
-        sync_task(wrike, usa, t["id"], uei_field_id, dry_run=dry_run, task=t)
+        sync_task(
+            wrike,
+            usa,
+            t["id"],
+            uei_field_id,
+            dry_run=dry_run,
+            task=t,
+            award_id_field_id=award_id_field_id,
+        )
         for t in wrike.list_folder_tasks(folder_id)
     ]
 
@@ -198,8 +235,18 @@ def sync_space(
     space_id: str,
     uei_field_id: str,
     dry_run: bool = False,
+    *,
+    award_id_field_id: str | None = None,
 ) -> list[dict[str, Any]]:
     return [
-        sync_task(wrike, usa, t["id"], uei_field_id, dry_run=dry_run, task=t)
+        sync_task(
+            wrike,
+            usa,
+            t["id"],
+            uei_field_id,
+            dry_run=dry_run,
+            task=t,
+            award_id_field_id=award_id_field_id,
+        )
         for t in wrike.list_space_tasks(space_id)
     ]
