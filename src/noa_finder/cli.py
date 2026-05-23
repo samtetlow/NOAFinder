@@ -7,6 +7,7 @@ import sys
 from .config import load_config, load_notify_config
 from .digest import build_digest
 from .notify import EmailNotifier, SlackNotifier, send_digest
+from .report import build_report
 from .sync import AWARD_ID_FIELD_TITLE, sync_folder, sync_space, sync_task
 from .usaspending import USASpendingClient
 from .wrike import WrikeClient
@@ -44,6 +45,16 @@ def build_parser() -> argparse.ArgumentParser:
     )
     s_space.add_argument("space_id")
     s_space.add_argument("--dry-run", action="store_true")
+
+    s_report = sub.add_parser(
+        "build-report",
+        help="Generate the JSON snapshot consumed by the NOA Finder web dashboard",
+    )
+    s_report.add_argument("space_id")
+    s_report.add_argument(
+        "--output", "-o", default="web/public/data/report.json",
+        help="Path to write the report JSON (default: web/public/data/report.json)",
+    )
 
     s_digest = sub.add_parser(
         "weekly-digest",
@@ -151,7 +162,32 @@ def main(argv: list[str] | None = None) -> int:
                 args, wrike, usa, uei_field_id, award_id_field_id
             )
 
+        if args.cmd == "build-report":
+            return _run_build_report(args, wrike, usa, uei_field_id)
+
     return 1
+
+
+def _run_build_report(
+    args, wrike: WrikeClient, usa: USASpendingClient, uei_field_id: str
+) -> int:
+    import os
+    report = build_report(wrike, usa, args.space_id, uei_field_id)
+    os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
+    with open(args.output, "w", encoding="utf-8") as fh:
+        json.dump(report, fh, indent=2, sort_keys=True)
+        fh.write("\n")
+    print(
+        json.dumps(
+            {
+                "output": args.output,
+                "totals": report["totals"],
+                "generated_at": report["generated_at"],
+            },
+            indent=2,
+        )
+    )
+    return 0
 
 
 def _run_weekly_digest(

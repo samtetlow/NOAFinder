@@ -1,0 +1,53 @@
+name: Daily report snapshot
+
+on:
+  schedule:
+    # Daily at 07:00 UTC (3 AM ET in EDT, 2 AM ET in EST).
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      space_id:
+        description: "Wrike space ID (overrides WRIKE_SPACE_ID secret)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Generate report
+        env:
+          WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
+          WRIKE_UEI_FIELD_NAME: ${{ vars.WRIKE_UEI_FIELD_NAME }}
+          SPACE_ID: ${{ inputs.space_id || secrets.WRIKE_SPACE_ID }}
+        run: noa-finder build-report "$SPACE_ID" --output web/public/data/report.json
+
+      - name: Commit snapshot if changed
+        run: |
+          if [ -z "$(git status --porcelain web/public/data/report.json)" ]; then
+            echo "Snapshot unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "noa-finder-bot"
+          git config user.email "noa-finder-bot@users.noreply.github.com"
+          git add web/public/data/report.json
+          git commit -m "chore: refresh NOA Finder report snapshot"
+          git push

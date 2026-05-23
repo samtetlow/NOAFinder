@@ -146,6 +146,68 @@ called **`USASpending Award ID`**. NOA Finder auto-creates this field on
 first run if it doesn't exist, and uses it (preferred) plus the title
 prefix (fallback) to detect already-imported awards on subsequent runs.
 
+## Web dashboard
+
+A Next.js dashboard at `web/` renders a sortable, filterable view of every
+client (Wrike task with a UEI) × their USASpending awards. It is read-only;
+data is a daily JSON snapshot produced by `noa-finder build-report` and
+committed to `web/public/data/report.json` by a GitHub Actions cron.
+
+### Local development
+
+```bash
+cd web
+npm install
+npm run dev    # http://localhost:3000
+```
+
+The dev server reads the same `web/public/data/report.json` snapshot. To
+regenerate it locally (with your `.env` populated):
+
+```bash
+noa-finder build-report <SPACE_ID> --output web/public/data/report.json
+```
+
+### Deploying to Vercel
+
+The Vercel project is at https://vercel.com/spirals/noa-finder. Link it to
+the `samtetlow/usaspending` GitHub repo with these settings:
+
+- **Framework preset:** Next.js (auto-detected from `vercel.json`)
+- **Root directory:** repository root (`vercel.json` builds from `web/`)
+
+### Required Vercel environment variables
+
+| Name | Value |
+|---|---|
+| `NEXTAUTH_URL` | Your deployment URL, e.g. `https://noa-finder.vercel.app` or a custom domain |
+| `NEXTAUTH_SECRET` | A random 32-byte string. Generate: `openssl rand -base64 32` |
+| `GOOGLE_CLIENT_ID` | OAuth client ID (see below) |
+| `GOOGLE_CLIENT_SECRET` | OAuth client secret |
+| `ALLOWED_GOOGLE_DOMAIN` | `grantengine.com` — only emails on this Google Workspace domain can sign in |
+
+### Creating the Google OAuth client
+
+1. https://console.cloud.google.com/apis/credentials → **Create
+   credentials → OAuth 2.0 Client ID**
+2. Application type: **Web application**, name: "NOA Finder"
+3. Authorized JavaScript origins: `https://<your-domain>`
+4. Authorized redirect URIs:
+   `https://<your-domain>/api/auth/callback/google`
+5. Copy the Client ID and Client Secret into Vercel env vars
+6. If `<your-domain>` is on `noa-finder.vercel.app` initially, add the
+   custom-domain URI alongside it later — leaving the .vercel.app URI in
+   place is fine
+
+### Daily snapshot workflow
+
+`.github/workflows/daily-snapshot.yml` runs at 07:00 UTC (3 AM ET) every
+day. It calls `noa-finder build-report` and commits the regenerated
+`web/public/data/report.json` to `main`. Vercel auto-deploys on push.
+
+Required GitHub Actions secrets for this workflow: `WRIKE_TOKEN`,
+`WRIKE_SPACE_ID` (already set up for the weekly digest).
+
 ## Tests
 
 ```bash

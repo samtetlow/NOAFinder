@@ -15,3 +15,10 @@ venv/
 htmlcov/
 *.log
 .DS_Store
+
+# Next.js / Vercel
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+web/next-env.d.ts
