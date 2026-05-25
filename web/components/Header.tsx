@@ -12,7 +12,7 @@ export function Header({ userEmail }: { userEmail?: string | null }) {
           width={44}
           height={44}
           priority
-          className="rounded"
+          className="rounded brightness-0 invert"
         />
         <div className="flex-1">
           <div className="text-xl font-semibold tracking-tight">NOA Finder</div>
