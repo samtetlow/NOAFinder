@@ -5,7 +5,12 @@ import { useMemo, useState } from "react";
 import { Filters, FilterState } from "./Filters";
 import { downloadCsv, rowsToCsv, todayStamp } from "@/lib/csv";
 import { formatMoney } from "@/lib/format";
-import type { DashboardRow, Report, SortKey } from "@/lib/types";
+import type {
+  DashboardRow,
+  Report,
+  SortDir,
+  SortKey,
+} from "@/lib/types";
 
 function flattenReport(report: Report): DashboardRow[] {
   const rows: DashboardRow[] = [];
@@ -53,15 +58,14 @@ function flattenReport(report: Report): DashboardRow[] {
   return rows;
 }
 
-function sortRows(rows: DashboardRow[], key: SortKey): DashboardRow[] {
+function sortRows(
+  rows: DashboardRow[],
+  key: SortKey,
+  dir: SortDir,
+): DashboardRow[] {
   const sorted = [...rows];
-  if (key === "customer") {
-    sorted.sort((a, b) =>
-      (a.task_title || "").localeCompare(b.task_title || ""),
-    );
-  } else if (key === "current_pm") {
+  if (key === "current_pm") {
     sorted.sort((a, b) => {
-      // Nulls last
       const av = a.program_manager || "￿";
       const bv = b.program_manager || "￿";
       const cmp = av.localeCompare(bv);
@@ -69,56 +73,42 @@ function sortRows(rows: DashboardRow[], key: SortKey): DashboardRow[] {
       return (a.task_title || "").localeCompare(b.task_title || "");
     });
   } else {
-    sorted.sort(
-      (a, b) => (b.total_amount ?? 0) - (a.total_amount ?? 0),
+    sorted.sort((a, b) =>
+      (a.task_title || "").localeCompare(b.task_title || ""),
     );
   }
+  if (dir === "desc") sorted.reverse();
   return sorted;
 }
 
 export function DashboardTable({ report }: { report: Report }) {
   const [filters, setFilters] = useState<FilterState>({
     query: "",
-    agency: "",
-    minAmount: "",
-    sort: "amount_desc",
+    sortKey: "customer",
+    sortDir: "asc",
   });
 
   const allRows = useMemo(() => flattenReport(report), [report]);
 
-  const agencies = useMemo(() => {
-    const set = new Set<string>();
-    for (const r of allRows) {
-      if (r.awarding_agency) set.add(r.awarding_agency);
-    }
-    return Array.from(set).sort();
-  }, [allRows]);
-
   const filteredRows = useMemo(() => {
     const q = filters.query.trim().toLowerCase();
-    const min = filters.minAmount ? Number(filters.minAmount) : 0;
-    const agency = filters.agency;
     const filtered = allRows.filter((r) => {
-      if (agency && r.awarding_agency !== agency) return false;
-      if (min && (r.total_amount ?? 0) < min) return false;
-      if (q) {
-        const hay = [
-          r.task_title,
-          r.uei,
-          r.award_id,
-          r.award_title,
-          r.program_manager,
-          r.grant_number,
-          r.project_title,
-        ]
-          .filter(Boolean)
-          .join(" ")
-          .toLowerCase();
-        if (!hay.includes(q)) return false;
-      }
-      return true;
+      if (!q) return true;
+      const hay = [
+        r.task_title,
+        r.uei,
+        r.award_id,
+        r.award_title,
+        r.program_manager,
+        r.grant_number,
+        r.project_title,
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return hay.includes(q);
     });
-    return sortRows(filtered, filters.sort);
+    return sortRows(filtered, filters.sortKey, filters.sortDir);
   }, [allRows, filters]);
 
   function handleExport() {
@@ -130,11 +120,7 @@ export function DashboardTable({ report }: { report: Report }) {
     <div className="mt-2">
       <div className="flex items-end gap-3 mt-6 flex-wrap">
         <div className="flex-1 min-w-[260px]">
-          <Filters
-            filters={filters}
-            setFilters={setFilters}
-            agencies={agencies}
-          />
+          <Filters filters={filters} setFilters={setFilters} />
         </div>
         <button
           type="button"

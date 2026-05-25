@@ -40,7 +40,6 @@ export interface Report {
 }
 
 export interface DashboardRow {
-  // Client-level (repeats across awards)
   task_id: string;
   task_title: string | null;
   uei: string;
@@ -48,7 +47,6 @@ export interface DashboardRow {
   program_manager: string | null;
   grant_number: string | null;
   project_title: string | null;
-  // Award-level
   award_id: string | null;
   award_title: string | null;
   award_type: string | null;
@@ -59,4 +57,5 @@ export interface DashboardRow {
   award_url: string | null;
 }
 
-export type SortKey = "amount_desc" | "customer" | "current_pm";
+export type SortKey = "customer" | "current_pm";
+export type SortDir = "asc" | "desc";
