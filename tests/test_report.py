@@ -21,12 +21,21 @@ class _StubUSA:
 _NOW = datetime(2026, 5, 22, 13, 0, tzinfo=timezone.utc)
 
 
-def _task(task_id, title, uei=None):
-    cf = [{"id": "UEI", "value": uei}] if uei else []
+def _task(task_id, title, uei=None, pm=None, grant_no=None, project=None):
+    cf = []
+    if uei is not None:
+        cf.append({"id": "UEI", "value": uei})
+    if pm is not None:
+        cf.append({"id": "PM", "value": pm})
+    if grant_no is not None:
+        cf.append({"id": "GN", "value": grant_no})
+    if project is not None:
+        cf.append({"id": "PT", "value": project})
     return {"id": task_id, "title": title, "customFields": cf}
 
 
-def _award(award_id, total, agency="DOD", internal_id=None):
+def _award(award_id, total, agency="DOD", internal_id=None,
+           description=None, start_date=None):
     return {
         "Award ID": award_id,
         "Recipient Name": "Acme Inc",
@@ -34,6 +43,8 @@ def _award(award_id, total, agency="DOD", internal_id=None):
         "Total Outlays": total * 0.4,
         "Awarding Agency": agency,
         "Award Type": "Contract",
+        "Description": description,
+        "Start Date": start_date,
         "generated_internal_id": internal_id,
     }
 
@@ -93,6 +104,49 @@ def test_build_report_metadata():
     assert rep["generated_at"] == "2026-05-22T13:00:00+00:00"
     assert rep["totals"] == {"clients": 0, "awards": 0, "amount": 0, "outlays": 0}
     assert rep["clients"] == []
+
+
+def test_build_report_award_includes_start_date_and_description():
+    wrike = _StubWrike([_task("T1", "Acme", uei="UEI1")])
+    usa = _StubUSA({"UEI1": [_award(
+        "X-1", 100.0, internal_id="CAW",
+        description="Build a defense system", start_date="2024-01-15",
+    )]})
+    rep = build_report(wrike, usa, "SP1", "UEI", now=_NOW)
+    award = rep["clients"][0]["awards"][0]
+    assert award["start_date"] == "2024-01-15"
+    assert award["description"] == "Build a defense system"
+
+
+def test_build_report_pulls_falcon_fields_when_field_ids_provided():
+    wrike = _StubWrike([
+        _task("T1", "Acme", uei="UEI1",
+              pm="Alice Doe", grant_no="GR-2024-001", project="Quantum sensors"),
+    ])
+    usa = _StubUSA({"UEI1": []})
+    rep = build_report(
+        wrike, usa, "SP1", "UEI", now=_NOW,
+        program_manager_field_id="PM",
+        grant_number_field_id="GN",
+        project_title_field_id="PT",
+    )
+    client = rep["clients"][0]
+    assert client["program_manager"] == "Alice Doe"
+    assert client["grant_number"] == "GR-2024-001"
+    assert client["project_title"] == "Quantum sensors"
+
+
+def test_build_report_falcon_fields_null_when_field_ids_omitted():
+    wrike = _StubWrike([
+        _task("T1", "Acme", uei="UEI1",
+              pm="Alice Doe", grant_no="GR-2024-001"),
+    ])
+    usa = _StubUSA({"UEI1": []})
+    rep = build_report(wrike, usa, "SP1", "UEI", now=_NOW)
+    client = rep["clients"][0]
+    assert client["program_manager"] is None
+    assert client["grant_number"] is None
+    assert client["project_title"] is None
 
 
 def test_build_report_wrike_url_per_client():

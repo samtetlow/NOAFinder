@@ -162,12 +162,12 @@ def test_award_to_dict_includes_url_when_internal_id_present():
     a = AwardSummary(
         award_id="X-1",
         title="Acme",
-        award_date=None,
+        award_date="2024-01-15",
         total_amount=1000.0,
         outlay_amount=500.0,
         award_type="Contract",
         awarding_agency="DOD",
-        description=None,
+        description="Build a thing",
         generated_internal_id="CONT_AWD_X",
     )
     d = award_to_dict(a)
@@ -176,6 +176,8 @@ def test_award_to_dict_includes_url_when_internal_id_present():
     assert d["total_amount"] == 1000.0
     assert d["outlay_amount"] == 500.0
     assert d["awarding_agency"] == "DOD"
+    assert d["start_date"] == "2024-01-15"
+    assert d["description"] == "Build a thing"
 
 
 def test_award_to_dict_omits_url_when_internal_id_missing():

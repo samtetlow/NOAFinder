@@ -163,16 +163,33 @@ def main(argv: list[str] | None = None) -> int:
             )
 
         if args.cmd == "build-report":
-            return _run_build_report(args, wrike, usa, uei_field_id)
+            return _run_build_report(args, wrike, usa, uei_field_id, cfg)
 
     return 1
 
 
+def _maybe_find_field(wrike: WrikeClient, name: str | None) -> str | None:
+    if not name:
+        return None
+    try:
+        return wrike.find_custom_field_id(name)
+    except LookupError:
+        return None
+
+
 def _run_build_report(
-    args, wrike: WrikeClient, usa: USASpendingClient, uei_field_id: str
+    args, wrike: WrikeClient, usa: USASpendingClient, uei_field_id: str, cfg,
 ) -> int:
     import os
-    report = build_report(wrike, usa, args.space_id, uei_field_id)
+    pm_field_id = _maybe_find_field(wrike, cfg.wrike_program_manager_field_name)
+    grant_field_id = _maybe_find_field(wrike, cfg.wrike_grant_number_field_name)
+    project_field_id = _maybe_find_field(wrike, cfg.wrike_project_title_field_name)
+    report = build_report(
+        wrike, usa, args.space_id, uei_field_id,
+        program_manager_field_id=pm_field_id,
+        grant_number_field_id=grant_field_id,
+        project_title_field_id=project_field_id,
+    )
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as fh:
         json.dump(report, fh, indent=2, sort_keys=True)
@@ -183,6 +200,11 @@ def _run_build_report(
                 "output": args.output,
                 "totals": report["totals"],
                 "generated_at": report["generated_at"],
+                "falcon_fields_resolved": {
+                    "program_manager": bool(pm_field_id),
+                    "grant_number": bool(grant_field_id),
+                    "project_title": bool(project_field_id),
+                },
             },
             indent=2,
         )

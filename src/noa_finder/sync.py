@@ -61,6 +61,8 @@ def award_to_dict(award: AwardSummary) -> dict[str, Any]:
         "outlay_amount": award.outlay_amount,
         "awarding_agency": award.awarding_agency,
         "award_type": award.award_type,
+        "description": award.description,
+        "start_date": award.award_date,
         "generated_internal_id": award.generated_internal_id,
         "url": usaspending_award_url(award.generated_internal_id),
     }

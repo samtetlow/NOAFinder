@@ -11,6 +11,9 @@ class Config:
     wrike_token: str
     wrike_base_url: str
     wrike_uei_field_name: str
+    wrike_program_manager_field_name: str | None
+    wrike_grant_number_field_name: str | None
+    wrike_project_title_field_name: str | None
     usaspending_base_url: str
     request_timeout: float
 
@@ -51,6 +54,15 @@ def load_config() -> Config:
             "WRIKE_BASE_URL", "https://www.wrike.com/api/v4"
         ).rstrip("/"),
         wrike_uei_field_name=os.environ.get("WRIKE_UEI_FIELD_NAME", "uei"),
+        wrike_program_manager_field_name=os.environ.get(
+            "WRIKE_PM_FIELD_NAME", ""
+        ).strip() or None,
+        wrike_grant_number_field_name=os.environ.get(
+            "WRIKE_GRANT_NUMBER_FIELD_NAME", ""
+        ).strip() or None,
+        wrike_project_title_field_name=os.environ.get(
+            "WRIKE_PROJECT_TITLE_FIELD_NAME", ""
+        ).strip() or None,
         usaspending_base_url=os.environ.get(
             "USASPENDING_BASE_URL", "https://api.usaspending.gov/api/v2"
         ).rstrip("/"),
