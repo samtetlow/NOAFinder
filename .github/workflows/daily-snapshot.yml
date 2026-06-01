@@ -7,6 +7,7 @@ on:
   push:
     branches: [main]
     # Avoid an infinite loop: the bot itself commits back to report.json.
+    # Markdown changes don't affect snapshot output either.
     paths-ignore:
       - "web/public/data/report.json"
       - "**/*.md"
