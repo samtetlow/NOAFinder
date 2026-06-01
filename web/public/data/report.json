@@ -5292,29 +5292,29 @@
       "wrike_url": "https://www.wrike.com/open.htm?id=IEAFXTW5KRI2RUDQ"
     }
   ],
-  "generated_at": "2026-06-01T03:52:49.725381+00:00",
+  "generated_at": "2026-06-01T04:07:49.499553+00:00",
   "schema_version": 2,
   "skipped": [
     {
-      "reason": "USASpending 422 for 'AdminCard_Rational Vaccines': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Rational Vaccines': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL7I",
       "task_title": "AdminCard_Rational Vaccines",
       "uei": "PKJWJVTMUS63"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Persperity Health Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Persperity Health Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRNE4YC4",
       "task_title": "AdminCard_Persperity Health Inc.",
       "uei": "RGXNT12P2N29"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_MCNB Holding Corp': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_MCNB Holding Corp': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRGTIECC",
       "task_title": "AdminCard_MCNB Holding Corp",
       "uei": "WQ37GCL466C4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ventoux Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Ventoux Biosciences': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEEDaVy",
       "task_title": "AdminCard_Ventoux Biosciences",
       "uei": "NX47TJTTJB24"
@@ -5326,211 +5326,211 @@
       "uei": "N/A"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_EMulate Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_EMulate Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYC",
       "task_title": "AdminCard_EMulate Therapeutics",
       "uei": "WJLVAJHJRJL7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_EmPowerYu': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_EmPowerYu': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYA",
       "task_title": "AdminCard_EmPowerYu",
       "uei": "JSGQU3FLTLJ6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Amytrx Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Amytrx Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRO24HMR",
       "task_title": "AdminCard_Amytrx Therapeutics",
       "uei": "VNFSN7SYM4J1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Just Breathe': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Just Breathe': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAABq-wwr",
       "task_title": "AdminCard_Just Breathe",
       "uei": "HD1UGFFC43S7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_FluoroFinder': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_FluoroFinder': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYW",
       "task_title": "AdminCard_FluoroFinder",
       "uei": "KY9JUX5BBLN7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Tacit': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Tacit': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRKIGFCO",
       "task_title": "AdminCard_Tacit",
       "uei": "Y14NBVGAEND8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Keylika Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Keylika Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL2Y",
       "task_title": "AdminCard_Keylika Inc.",
       "uei": "GLGFPEH2HW41"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Neomera BioLab Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Neomera BioLab Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEEgYQP",
       "task_title": "AdminCard_Neomera BioLab Inc.",
       "uei": "Z5ATH38T9DB5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Gataca LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Gataca LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJI5XWS",
       "task_title": "AdminCard_Gataca LLC",
       "uei": "F4QWT923GBW6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Katz Diagnostics Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Katz Diagnostics Inc': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL2V",
       "task_title": "AdminCard_Katz Diagnostics Inc",
       "uei": "ZYW2SPQ722B6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Rosebud Biosciences Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Rosebud Biosciences Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMAC",
       "task_title": "AdminCard_Rosebud Biosciences Inc.",
       "uei": "WV8CZB3JHU21"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Stellular Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Stellular Bio': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRG3URUL",
       "task_title": "AdminCard_Stellular Bio",
       "uei": "FQJGHFHTYRJ9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Piccolo Medical Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Piccolo Medical Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRSDDJGU",
       "task_title": "AdminCard_Piccolo Medical Inc.",
       "uei": "ER4YMDYBCJ33"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_SmartAirway LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_SmartAirway LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMCD",
       "task_title": "AdminCard_SmartAirway LLC",
       "uei": "CDSQQB3SREA8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Fenologica': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Fenologica': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYT",
       "task_title": "AdminCard_Fenologica",
       "uei": "FFMEGKXEFBD8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Principle Health Systems': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Principle Health Systems': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEEF63T",
       "task_title": "AdminCard_Principle Health Systems",
       "uei": "HWX8NX5DHNZ3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Vincere Biosciences, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Vincere Biosciences, Inc': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMEU",
       "task_title": "AdminCard_Vincere Biosciences, Inc",
       "uei": "EDW8PMKW9JD5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Aether Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Aether Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLTC",
       "task_title": "AdminCard_Aether Therapeutics",
       "uei": "NJFKMRGZJVF5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_AvantGuard Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_AvantGuard Inc': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLUE",
       "task_title": "AdminCard_AvantGuard Inc",
       "uei": "FT1LJN4UPKJ3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_VitaWave Tech': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_VitaWave Tech': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRSRUEWP",
       "task_title": "AdminCard_VitaWave Tech",
       "uei": "V4B9UN5NJ1W9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Archon Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Archon Biosciences': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRI7K4NW",
       "task_title": "AdminCard_Archon Biosciences",
       "uei": "Y752ZCYWCAL9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Bloomer Health Tech, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Bloomer Health Tech, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLU6",
       "task_title": "AdminCard_Bloomer Health Tech, Inc.",
       "uei": "LF99DF8JTG97"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_BacVax, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_BacVax, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLUK",
       "task_title": "AdminCard_BacVax, Inc.",
       "uei": "JZVDFT9DF775"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Biomark Oncology': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Biomark Oncology': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRGQO2LY",
       "task_title": "AdminCard_Biomark Oncology",
       "uei": "TJ5PJEJ2XX23"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Jeeva Informatics Solutions': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Jeeva Informatics Solutions': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL2R",
       "task_title": "AdminCard_Jeeva Informatics Solutions",
       "uei": "MTAMCN1QX298"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pulsar': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Pulsar': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL66",
       "task_title": "AdminCard_Pulsar",
       "uei": "STFFN6QWFKH3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_SOUTH RAMPART PHARMA, LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_SOUTH RAMPART PHARMA, LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMCH",
       "task_title": "AdminCard_SOUTH RAMPART PHARMA, LLC",
       "uei": "MCE7AYNCB768"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Digital Harmonic LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Digital Harmonic LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRLG3IT4",
       "task_title": "AdminCard_Digital Harmonic LLC",
       "uei": "PBR7ZKUKEHP9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Veravas Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Veravas Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRNMPQQN",
       "task_title": "AdminCard_Veravas Inc.",
       "uei": "T7B3MJDQ2J84"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Aspero Medical': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Aspero Medical': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLT5",
       "task_title": "AdminCard_Aspero Medical",
       "uei": "TDG7FH5K6ZJ4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Micro-Injector System': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Micro-Injector System': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRNJDKZG",
       "task_title": "AdminCard_Micro-Injector System",
       "uei": "QB95UJAKHS28"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NeedleGPS': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_NeedleGPS': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRPJ6ZNP",
       "task_title": "AdminCard_NeedleGPS",
       "uei": "WE57FGBL1A76"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Coastar Therapeutics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Coastar Therapeutics Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLW2",
       "task_title": "AdminCard_Coastar Therapeutics Inc.",
       "uei": "ULRBNDQC6485"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_IASO Therapeutics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_IASO Therapeutics Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRMY6YFX",
       "task_title": "AdminCard_IASO Therapeutics Inc.",
       "uei": "DXLWUB84NJJ5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PsiloSterics LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_PsiloSterics LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL62",
       "task_title": "AdminCard_PsiloSterics LLC",
       "uei": "HVKNGYW2QFJ8"
@@ -5542,337 +5542,337 @@
       "uei": "<em>HVKNGYW2QFJ8</em>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PTM Therapeutics, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_PTM Therapeutics, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL65",
       "task_title": "AdminCard_PTM Therapeutics, Inc.",
       "uei": "EB1ELBMAPU23"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cogentis Therapeutics, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Cogentis Therapeutics, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLW4",
       "task_title": "AdminCard_Cogentis Therapeutics, Inc.",
       "uei": "T5K6EP6DD251"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Opus Medical': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Opus Medical': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL5N",
       "task_title": "AdminCard_Opus Medical",
       "uei": "WESMXGAGYNV3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_InaPill Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_InaPill Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRNZHX27",
       "task_title": "AdminCard_InaPill Inc.",
       "uei": "MS27XCZW1GM1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Evvia Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Evvia Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYN",
       "task_title": "AdminCard_Evvia Therapeutics",
       "uei": "FH1MM3EMZAL4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Saje Pharma': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Saje Pharma': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMAO",
       "task_title": "AdminCard_Saje Pharma",
       "uei": "HFUFFBD2N9V6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Proton Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Proton Bio': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL6X",
       "task_title": "AdminCard_Proton Bio",
       "uei": "L37UYZG8JMK5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Dar\u00e9 Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Dar\u00e9 Biosciences': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLXH",
       "task_title": "AdminCard_Dar\u00e9 Biosciences",
       "uei": "UC4EFLZHANH4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_TFF Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_TFF Pharmaceuticals': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWMDW",
       "task_title": "AdminCard_TFF Pharmaceuticals",
       "uei": "MX2NW2D85H64"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Narwhal Medical': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Narwhal Medical': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAECXqnZ",
       "task_title": "AdminCard_Narwhal Medical",
       "uei": "NQCKMA26KTG1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Open Recovery': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Open Recovery': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRRLD7WG",
       "task_title": "AdminCard_Open Recovery",
       "uei": "WS3NDXNQC156"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Oncotab, INC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Oncotab, INC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL5J",
       "task_title": "AdminCard_Oncotab, INC",
       "uei": "E5FXNY7GG5M5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_OCMS Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_OCMS Bio': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL5F",
       "task_title": "AdminCard_OCMS Bio",
       "uei": "X627KKM335K9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Prana Pacing': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Prana Pacing': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL6O",
       "task_title": "AdminCard_Prana Pacing",
       "uei": "K6MVTKH8QAL4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Illudent Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Illudent Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRSRFAEH",
       "task_title": "AdminCard_Illudent Therapeutics",
       "uei": "K9SHSWEMELR4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Asha Medical, Inc. (Previously Riga Labs)': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Asha Medical, Inc. (Previously Riga Labs)': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLT2",
       "task_title": "AdminCard_Asha Medical, Inc. (Previously Riga Labs)",
       "uei": "T65WZ1SBN597"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Redvault Biosciences, LP': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Redvault Biosciences, LP': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL7P",
       "task_title": "AdminCard_Redvault Biosciences, LP",
       "uei": "RTNFR882TQP8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PulMair Medical': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_PulMair Medical': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAABqiBZ0",
       "task_title": "AdminCard_PulMair Medical",
       "uei": "LCE6QCHGEZC5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Psilera': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Psilera': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRMU6NRC",
       "task_title": "AdminCard_Psilera",
       "uei": "SJJCNTKLFD68"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Arkayli Biopharma Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Arkayli Biopharma Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLT3",
       "task_title": "AdminCard_Arkayli Biopharma Inc.",
       "uei": "Y569SLYB1EJ9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Belly-MD': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Belly-MD': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAABqITZP",
       "task_title": "AdminCard_Belly-MD",
       "uei": "GQ1MUGN67BM5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Circularis Biotechnologies, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Circularis Biotechnologies, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLWS",
       "task_title": "AdminCard_Circularis Biotechnologies, Inc.",
       "uei": "GY42ZXC5MTX8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NuVeta': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_NuVeta': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRMXMSMH",
       "task_title": "AdminCard_NuVeta",
       "uei": "XR31K1DJXQL6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Piton Tx Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Piton Tx Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRPLF3YL",
       "task_title": "AdminCard_Piton Tx Inc.",
       "uei": "U4F9LMZHCQ28"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ashvattha Therapeutics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Ashvattha Therapeutics Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLT4",
       "task_title": "AdminCard_Ashvattha Therapeutics Inc.",
       "uei": "JK5CPL9WDQ85"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Fellow Health Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Fellow Health Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRPIE7KE",
       "task_title": "AdminCard_Fellow Health Inc.",
       "uei": "NYJGP22H15Z1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Felix Biotechnology': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Felix Biotechnology': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYS",
       "task_title": "AdminCard_Felix Biotechnology",
       "uei": "Y3JNYYQ5YHA6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Permeatus, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Permeatus, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL57",
       "task_title": "AdminCard_Permeatus, Inc.",
       "uei": "CX2ZH9L4SJE3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Determined Health': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Determined Health': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLXO",
       "task_title": "AdminCard_Determined Health",
       "uei": "VPWFLW91J3Z4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Early Is Good, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Early Is Good, Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLXX",
       "task_title": "AdminCard_Early Is Good, Inc.",
       "uei": "srjmsynbntq1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Gilboa Tx': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Gilboa Tx': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLZD",
       "task_title": "AdminCard_Gilboa Tx",
       "uei": "SKLWLQFT9SW7"
     },
     {
-      "reason": "USASpending 422 for 'Source Energy Admin Card': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'Source Energy Admin Card': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEGx6_K",
       "task_title": "Source Energy Admin Card",
       "uei": "XX1RGAW9W7V3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Savanna (formerly NovoGlia)': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Savanna (formerly NovoGlia)': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL5B",
       "task_title": "AdminCard_Savanna (formerly NovoGlia)",
       "uei": "ZBZRGEKN32S4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Fortuna Clinical LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Fortuna Clinical LLC': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLYY",
       "task_title": "AdminCard_Fortuna Clinical LLC",
       "uei": "CYLKH8G5ERR1"
     },
     {
-      "reason": "USASpending 422 for \"AdminCard_Nature's Toolbox\": {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for \"AdminCard_Nature's Toolbox\": {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRMNP56R",
       "task_title": "AdminCard_Nature's Toolbox",
       "uei": "K1D5QLNK8JD1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Aluda Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Aluda Pharmaceuticals': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWLTL",
       "task_title": "AdminCard_Aluda Pharmaceuticals",
       "uei": "ZXMBLTDW4DA4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Breeze Bio (fkaGenEdit)': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Breeze Bio (fkaGenEdit)': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRGTID5S",
       "task_title": "AdminCard_Breeze Bio (fkaGenEdit)",
       "uei": "NDM8LLBA98D9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Insightful Instruments Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Insightful Instruments Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRODJKKC",
       "task_title": "AdminCard_Insightful Instruments Inc.",
       "uei": "P43HWBADLXZ3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NeuroGeneces': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_NeuroGeneces': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAECCbK2",
       "task_title": "AdminCard_NeuroGeneces",
       "uei": "S41ZG5BFWCK7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_CareYaya Technologies Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_CareYaya Technologies Inc.': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRLG3FHY",
       "task_title": "AdminCard_CareYaya Technologies Inc.",
       "uei": "E9FAWBDDM2D4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Stepan': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Stepan': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEDI-nu",
       "task_title": "AdminCard_Stepan",
       "uei": "H6CFFXJ64BE6"
     },
     {
-      "reason": "USASpending 422 for 'Aptos Orbital Admin Card': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'Aptos Orbital Admin Card': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "MAAAAAEGx6M8",
       "task_title": "Aptos Orbital Admin Card",
       "uei": "S2S1HXUFM4L4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NeoSynapse Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_NeoSynapse Therapeutics': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRJEWL4S",
       "task_title": "AdminCard_NeoSynapse Therapeutics",
       "uei": "MND1X7FVNDC4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Amnion Life': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending 400 for 'AdminCard_Amnion Life': {\"detail\":\"Sort value 'Award Amount' not found in Loan Award mappings: ['Award ID', 'Recipient Name', 'Recipient DUNS Number', 'recipient_id', 'Awarding Agency', 'Awarding Agency Code', 'Awarding Sub ",
       "task_id": "IEAFXTW5KRLGHPRV",
       "task_title": "AdminCard_Amnion Life",
       "uei": "MJ8LD1SNQYF4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Caren Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Caren Pharmaceuticals': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLV2",
       "task_title": "AdminCard_Caren Pharmaceuticals",
       "uei": "N2TCGMAB3B17"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_CentiVax Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_CentiVax Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLG4JOS",
       "task_title": "AdminCard_CentiVax Inc.",
       "uei": "GDKVJMCM5KQ6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_AtaiLifeScience': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_AtaiLifeScience': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRIUP5BI",
       "task_title": "AdminCard_AtaiLifeScience",
       "uei": "TE66JYGMACX5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Briacell/Sapientia': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Briacell/Sapientia': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLVH",
       "task_title": "AdminCard_Briacell/Sapientia",
       "uei": "S4APLQN63FL6"
     },
     {
-      "reason": "USASpending 422 for \"AdminCard_Maggie's Pearl LLC\": {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for \"AdminCard_Maggie's Pearl LLC\": RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL3S",
       "task_title": "AdminCard_Maggie's Pearl LLC",
       "uei": "DZGEHEGC3BJ8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_HydroGene Therapeutics, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_HydroGene Therapeutics, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZV",
       "task_title": "AdminCard_HydroGene Therapeutics, Inc",
       "uei": "RYZ8N8S6TNR5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_BreakBio Corp': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_BreakBio Corp': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLVE",
       "task_title": "AdminCard_BreakBio Corp",
       "uei": "UD4UV7JJ2NX3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Aisa Pharma': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Aisa Pharma': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSRV7YK",
       "task_title": "AdminCard_Aisa Pharma",
       "uei": "HJWNGKWMW876"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_General Fluidics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_General Fluidics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZB",
       "task_title": "AdminCard_General Fluidics",
       "uei": "QXBMCNM3NM25"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_ThirdLaw Molecular LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_ThirdLaw Molecular LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMD3",
       "task_title": "AdminCard_ThirdLaw Molecular LLC",
       "uei": "MMJFRJMYSN63"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Homecare Hub': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Homecare Hub': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRFNJSXS",
       "task_title": "AdminCard_Homecare Hub",
       "uei": "YFDHYJCMZUG6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Augnition Labs': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Augnition Labs': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLUD",
       "task_title": "AdminCard_Augnition Labs",
       "uei": "HZ3VDKZRFQJ9"
@@ -5884,241 +5884,241 @@
       "uei": "<strong>EAR1T6H76QG5</strong>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Vascular Vision Pharmaceuticals Co.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Vascular Vision Pharmaceuticals Co.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMEQ",
       "task_title": "AdminCard_Vascular Vision Pharmaceuticals Co.",
       "uei": "CZQSE8JMCEN1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Vacunax Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Vacunax Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMEP",
       "task_title": "AdminCard_Vacunax Inc.",
       "uei": "D71NS8P2G5A8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Baldoni Neuromodulation LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Baldoni Neuromodulation LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLUL",
       "task_title": "AdminCard_Baldoni Neuromodulation LLC",
       "uei": "KHNNF9B17DK5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pro-Al Medico Technologies, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Pro-Al Medico Technologies, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6U",
       "task_title": "AdminCard_Pro-Al Medico Technologies, Inc.",
       "uei": "EBJVCNBLBDK5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_VistaGen Therapeutics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_VistaGen Therapeutics Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMEX",
       "task_title": "AdminCard_VistaGen Therapeutics Inc.",
       "uei": "FVFWA5XQJ3V5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Sarcio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Sarcio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMAT",
       "task_title": "AdminCard_Sarcio",
       "uei": "XUNFLEGZB8G8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Remedi Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Remedi Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPLGFWS",
       "task_title": "AdminCard_Remedi Therapeutics",
       "uei": "E7JNQSANY1K6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Hexagon Bio, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Hexagon Bio, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZP",
       "task_title": "AdminCard_Hexagon Bio, Inc",
       "uei": "MTFRFM1PNTL5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Resolys Bio Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Resolys Bio Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL7W",
       "task_title": "AdminCard_Resolys Bio Inc",
       "uei": "GTJ8P9HWKMX4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_3Vo Med': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_3Vo Med': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLST",
       "task_title": "AdminCard_3Vo Med",
       "uei": "QS8NCD55FUL6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Protuoso, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Protuoso, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRE37JHW",
       "task_title": "AdminCard_Protuoso, Inc",
       "uei": "NE4RB9XMYFM9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_iTolerance': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_iTolerance': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLGK6KY",
       "task_title": "AdminCard_iTolerance",
       "uei": "TDJACHEGM4J7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cresilon': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Cresilon': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKIDH6H",
       "task_title": "AdminCard_Cresilon",
       "uei": "RT8LEMLKJ6F7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_MAIA Biotechnology Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_MAIA Biotechnology Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRORUM3U",
       "task_title": "AdminCard_MAIA Biotechnology Inc.",
       "uei": "NPLUZJSWA853"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Aridis Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Aridis Pharmaceuticals': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLTX",
       "task_title": "AdminCard_Aridis Pharmaceuticals",
       "uei": "LA2ZAQNZE6W5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Osteogen Tech': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Osteogen Tech': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5P",
       "task_title": "AdminCard_Osteogen Tech",
       "uei": "JAACRKUTCNW3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Zoe Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Zoe Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMFH",
       "task_title": "AdminCard_Zoe Biosciences",
       "uei": "QA8RMGWXYAZ8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Clarigent Health': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Clarigent Health': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLWT",
       "task_title": "AdminCard_Clarigent Health",
       "uei": "DD2RXNWB7MJ7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Scilex Holding Company': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Scilex Holding Company': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRNHKDTC",
       "task_title": "AdminCard_Scilex Holding Company",
       "uei": "FAQHC2LXMMZ2"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_EcoGenome LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_EcoGenome LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLX2",
       "task_title": "AdminCard_EcoGenome LLC",
       "uei": "VLV8KECKA5Y9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Freedom Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Freedom Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSIEYD2",
       "task_title": "AdminCard_Freedom Biosciences",
       "uei": "ZL44FAEAGES5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Gemini Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Gemini Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABocvcS",
       "task_title": "AdminCard_Gemini Therapeutics",
       "uei": "HLNQFLHUXEG2"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_CounterAct': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_CounterAct': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLXC",
       "task_title": "AdminCard_CounterAct",
       "uei": "ECK1ULVVALS3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_SharpMed': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_SharpMed': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRIWRVPN",
       "task_title": "AdminCard_SharpMed",
       "uei": "LTKSG6RC44T9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Novoron Bioscience, Inc. | Neuroregenerative Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Novoron Bioscience, Inc. | Neuroregenerative Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5C",
       "task_title": "AdminCard_Novoron Bioscience, Inc. | Neuroregenerative Therapeutics",
       "uei": "K4L2JH8P6EE5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Science Lab 3, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Science Lab 3, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMAY",
       "task_title": "AdminCard_Science Lab 3, Inc.",
       "uei": "VCAJFYVK7ZJ5"
     },
     {
-      "reason": "USASpending 422 for 'Tenna Systems Inc. (fka Tip & Cue) Admin Card': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'Tenna Systems Inc. (fka Tip & Cue) Admin Card': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEGx66W",
       "task_title": "Tenna Systems Inc. (fka Tip & Cue) Admin Card",
       "uei": "GXCFXGK365K9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Epic Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Epic Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRL6XFP6",
       "task_title": "AdminCard_Epic Bio",
       "uei": "N9BZDSUALAY6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Actio Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Actio Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLS2",
       "task_title": "AdminCard_Actio Biosciences",
       "uei": "UD4UV7JJ2NX3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_TwoStep Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_TwoStep Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRNJCFD2",
       "task_title": "AdminCard_TwoStep Therapeutics",
       "uei": "MHK8GE9N4NE7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_iO Life Science': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_iO Life Science': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL2J",
       "task_title": "AdminCard_iO Life Science",
       "uei": "UP76XAAZ65U7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Uereka Biosciences Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Uereka Biosciences Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMEK",
       "task_title": "AdminCard_Uereka Biosciences Inc",
       "uei": "L5W1CCX1R678"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_CurieDx': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_CurieDx': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRRYVSA2",
       "task_title": "AdminCard_CurieDx",
       "uei": "QUJ8BQ1CFAS2"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Episteme Prognostics, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Episteme Prognostics, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLGLA56",
       "task_title": "AdminCard_Episteme Prognostics, Inc.",
       "uei": "W38GSDRGSVL7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Isabl, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Isabl, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL2N",
       "task_title": "AdminCard_Isabl, Inc",
       "uei": "QQ7WTMN9ZM59"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Silanus Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Silanus Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMBQ",
       "task_title": "AdminCard_Silanus Therapeutics",
       "uei": "WFFDNY1ZGBR6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Noleus Technologies': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Noleus Technologies': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJBA74J",
       "task_title": "AdminCard_Noleus Technologies",
       "uei": "Q97ABFMG7FG9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pedia-Dose': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Pedia-Dose': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRQHFQJI",
       "task_title": "AdminCard_Pedia-Dose",
       "uei": "UACXX6KZ27H9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Functional Fluidics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Functional Fluidics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLY4",
       "task_title": "AdminCard_Functional Fluidics",
       "uei": "EDDMU2KMYPE3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Neuros Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Neuros Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLICUNL",
       "task_title": "AdminCard_Neuros Bio",
       "uei": "RN4EMMBEB7R7"
@@ -6130,61 +6130,61 @@
       "uei": "V\u200bR\u200b8\u200bX\u200bJ\u200bT\u200bT\u200bB\u200bS\u200b2\u200bM\u200b7\u200b"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_OncoNano Medicine, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_OncoNano Medicine, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5I",
       "task_title": "AdminCard_OncoNano Medicine, Inc.",
       "uei": "FSRUUQKHD749"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Massive Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Massive Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL3X",
       "task_title": "AdminCard_Massive Bio",
       "uei": "YJVRMJTJHCG8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Indee Labs': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Indee Labs': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL2C",
       "task_title": "AdminCard_Indee Labs",
       "uei": "SMXHTLFW8M47"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_AcuteBio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_AcuteBio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLS7",
       "task_title": "AdminCard_AcuteBio",
       "uei": "LEC6UCJZB1R8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Lo Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Lo Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRFFFVCY",
       "task_title": "AdminCard_Lo Biosciences",
       "uei": "JPVWZEYKLXN3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Claria Medical': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Claria Medical': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPNGLIX",
       "task_title": "AdminCard_Claria Medical",
       "uei": "KUGJGUJN2G75"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Geneius Biotechnology Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Geneius Biotechnology Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZA",
       "task_title": "AdminCard_Geneius Biotechnology Inc.",
       "uei": "Q6XZU1LL81N5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Petros Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Petros Pharmaceuticals': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6C",
       "task_title": "AdminCard_Petros Pharmaceuticals",
       "uei": "LTYNHS75UXL7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ovitz Corporation': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Ovitz Corporation': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLCUDLK",
       "task_title": "AdminCard_Ovitz Corporation",
       "uei": "H8F1RFTDHNP3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_LEAH Labs': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_LEAH Labs': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRQ7NJGP",
       "task_title": "AdminCard_LEAH Labs",
       "uei": "N8JEWCR8XZL4"
@@ -6196,163 +6196,163 @@
       "uei": "N/A"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_BlueSky Polymers': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_BlueSky Polymers': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRROQMLN",
       "task_title": "AdminCard_BlueSky Polymers",
       "uei": "JMK1B24BAN14"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_IVSonance Biomedical Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_IVSonance Biomedical Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRO2W27X",
       "task_title": "AdminCard_IVSonance Biomedical Inc.",
       "uei": "DHVBSYS7ANM6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Logix Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Logix Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPMDSZY",
       "task_title": "AdminCard_Logix Biosciences",
       "uei": "VRJLPVYJK265"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Rallidae Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Rallidae Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEEF7Sz",
       "task_title": "AdminCard_Rallidae Therapeutics",
       "uei": "CWTYFK2KQNJ7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_100X Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_100X Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLSQ",
       "task_title": "AdminCard_100X Bio",
       "uei": "SAKMYV76HRG1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Maipl Tx': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Maipl Tx': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL3V",
       "task_title": "AdminCard_Maipl Tx",
       "uei": "UKYVLM1WKBK7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Radiatric Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Radiatric Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSAZIRP",
       "task_title": "AdminCard_Radiatric Inc.",
       "uei": "GTAUDRGGLEN1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PureSomni': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_PureSomni': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKIDVKN",
       "task_title": "AdminCard_PureSomni",
       "uei": "FLNDC5JG7628"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Concarlo Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Concarlo Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLW5",
       "task_title": "AdminCard_Concarlo Therapeutics",
       "uei": "N8GXQ8AXN6J6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ianacare, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Ianacare, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZX",
       "task_title": "AdminCard_Ianacare, Inc",
       "uei": "N22NSLJACKN4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_UV-Concepts Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_UV-Concepts Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMEO",
       "task_title": "AdminCard_UV-Concepts Inc",
       "uei": "UQEHVLBFWHQ3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Sachi Bioworks': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Sachi Bioworks': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMAK",
       "task_title": "AdminCard_Sachi Bioworks",
       "uei": "NTKPGKZLXPC1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Recce Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Recce Pharmaceuticals': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSCSI6F",
       "task_title": "AdminCard_Recce Pharmaceuticals",
       "uei": "NPJ4XBV6EHD7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Olio Labs Incorporated': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Olio Labs Incorporated': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5G",
       "task_title": "AdminCard_Olio Labs Incorporated",
       "uei": "QPBVRJBDCQM9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Phenom Pharma': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Phenom Pharma': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6F",
       "task_title": "AdminCard_Phenom Pharma",
       "uei": "D45DKX5UGRM3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Macula Vision Systems': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Macula Vision Systems': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRR44KGC",
       "task_title": "AdminCard_Macula Vision Systems",
       "uei": "JUXRYEUQRU93"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Siren Care Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Siren Care Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRNO2OT2",
       "task_title": "AdminCard_Siren Care Inc",
       "uei": "L25XCRCXCD86"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_GetSetUp Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_GetSetUp Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLTZ5JQ",
       "task_title": "AdminCard_GetSetUp Inc.",
       "uei": "PXKKLPDF17Y6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Origin Endoscopy': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Origin Endoscopy': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLTYYE2",
       "task_title": "AdminCard_Origin Endoscopy",
       "uei": "FNG7WGQLJ2U6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Stage One Immunotherapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Stage One Immunotherapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABq40gJ",
       "task_title": "AdminCard_Stage One Immunotherapeutics",
       "uei": "J1H4P2WTBC15"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Antlia Bioscience': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Antlia Bioscience': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLTT",
       "task_title": "AdminCard_Antlia Bioscience",
       "uei": "QVE5F34K4773"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_GT Biosciences Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_GT Biosciences Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRQNP4GJ",
       "task_title": "AdminCard_GT Biosciences Inc.",
       "uei": "MGURNZPQXL39"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Nuvamid and Imalia USA': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Nuvamid and Imalia USA': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKIF3BJ",
       "task_title": "AdminCard_Nuvamid and Imalia USA",
       "uei": "CAQGTG1K8HW3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NellOne Therapeutics, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_NellOne Therapeutics, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL4Q",
       "task_title": "AdminCard_NellOne Therapeutics, Inc.",
       "uei": "X42MJDLH51V5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_6J Biotechnology': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_6J Biotechnology': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLSV",
       "task_title": "AdminCard_6J Biotechnology",
       "uei": "CK7VC3JZYNB8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Rampart Health': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Rampart Health': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRHAMPT3",
       "task_title": "AdminCard_Rampart Health",
       "uei": "T1J6Q4AZ5KC6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NSITE, Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_NSITE, Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5E",
       "task_title": "AdminCard_NSITE, Inc",
       "uei": "YW9CLFZHZY28"
@@ -6364,67 +6364,67 @@
       "uei": "N/A"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_VSTBio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_VSTBio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMFA",
       "task_title": "AdminCard_VSTBio",
       "uei": "C5N1EDAPEMF8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Conveyer LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Conveyer LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLGK3PR",
       "task_title": "AdminCard_Conveyer LLC",
       "uei": "WQBZYZ6BKN19"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Darwin Biosciences Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Darwin Biosciences Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLXI",
       "task_title": "AdminCard_Darwin Biosciences Inc.",
       "uei": "E9NXBCYHTJ14"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_21MedTech': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_21MedTech': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLSS",
       "task_title": "AdminCard_21MedTech",
       "uei": "ZN79YPX5YL63"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Flen Health': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Flen Health': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEHnKPS",
       "task_title": "AdminCard_Flen Health",
       "uei": "MBLKRDNEHM15"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Immune Age': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Immune Age': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZ4",
       "task_title": "AdminCard_Immune Age",
       "uei": "YZVMPKQLRBH5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Centese Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Centese Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSW6MYB",
       "task_title": "AdminCard_Centese Inc.",
       "uei": "CK94DNTVV9F5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Lime Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Lime Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRM5IESI",
       "task_title": "AdminCard_Lime Therapeutics",
       "uei": "H4B9CTX8R1T9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Plethy': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Plethy': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6L",
       "task_title": "AdminCard_Plethy",
       "uei": "WAFKN67QNN87"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Neuradaptive': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Neuradaptive': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABrUBTm",
       "task_title": "AdminCard_Neuradaptive",
       "uei": "WWQ8C3SEG8H1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Carolina BioOncology Institute': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Carolina BioOncology Institute': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLV4",
       "task_title": "AdminCard_Carolina BioOncology Institute",
       "uei": "RTSCJU9KL8J5"
@@ -6436,151 +6436,151 @@
       "uei": "<strong>TTESQN12ZGE6</strong>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_VyaHealth': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_VyaHealth': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEDQ-ht",
       "task_title": "AdminCard_VyaHealth",
       "uei": "W5BQDT3WC6V7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_LIMBER Prosthetics and Orthotics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_LIMBER Prosthetics and Orthotics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRNCOQWC",
       "task_title": "AdminCard_LIMBER Prosthetics and Orthotics",
       "uei": "C5JLJ979DJH5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Psy Therapeutics Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Psy Therapeutics Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL63",
       "task_title": "AdminCard_Psy Therapeutics Inc",
       "uei": "HQN8CMYP15M3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Survey Genomics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Survey Genomics Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMC6",
       "task_title": "AdminCard_Survey Genomics Inc.",
       "uei": "RNY8DS2LHBH4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Forcyte Biotechnologies Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Forcyte Biotechnologies Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKRAKLB",
       "task_title": "AdminCard_Forcyte Biotechnologies Inc",
       "uei": "ZKRBTVTJBGL5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pratum Therapeutics, LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Pratum Therapeutics, LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6P",
       "task_title": "AdminCard_Pratum Therapeutics, LLC",
       "uei": "W9HSNMVGNDK9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Numiera Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Numiera Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRO225TM",
       "task_title": "AdminCard_Numiera Therapeutics",
       "uei": "ZCJ9M6X1Y3U7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_TheraNova': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_TheraNova': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMD2",
       "task_title": "AdminCard_TheraNova",
       "uei": "PWMHH9QT8P93"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ymmunobio LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Ymmunobio LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMFF",
       "task_title": "AdminCard_Ymmunobio LLC",
       "uei": "GTSPA7TJYDN8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Diadem Biotherapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Diadem Biotherapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLXP",
       "task_title": "AdminCard_Diadem Biotherapeutics",
       "uei": "XPG8N3LWL4M4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Wearlinq': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Wearlinq': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEFYPgg",
       "task_title": "AdminCard_Wearlinq",
       "uei": "JBYRJLF8W5E8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Siyan Clinical Corp': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Siyan Clinical Corp': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMCB",
       "task_title": "AdminCard_Siyan Clinical Corp",
       "uei": "LDYLL73QGPQ1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Novelna': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Novelna': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRMU6IZF",
       "task_title": "AdminCard_Novelna",
       "uei": "D3PEXDAKV1N6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Lightseed Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Lightseed Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL3D",
       "task_title": "AdminCard_Lightseed Inc",
       "uei": "EKE1RJKQSGL9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Black Fur': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Black Fur': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKPODDY",
       "task_title": "AdminCard_Black Fur",
       "uei": "M7STH7L2NK99"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Coagulant Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Coagulant Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLWZ",
       "task_title": "AdminCard_Coagulant Therapeutics",
       "uei": "F5Z9K6PZMK75"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Centillion Biosciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Centillion Biosciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEBKkzs",
       "task_title": "AdminCard_Centillion Biosciences",
       "uei": "J4VTVFBXHDH9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Abxtract': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Abxtract': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABm8Q_p",
       "task_title": "AdminCard_Abxtract",
       "uei": "UBW2UL8UT177"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cell Spinpod LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Cell Spinpod LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLWA",
       "task_title": "AdminCard_Cell Spinpod LLC",
       "uei": "S96KEK7MW4K9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Bacchus Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Bacchus Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLUJ",
       "task_title": "AdminCard_Bacchus Therapeutics",
       "uei": "EWCHMK9ZL174"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Litus Therapeutics, LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Litus Therapeutics, LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL3H",
       "task_title": "AdminCard_Litus Therapeutics, LLC",
       "uei": "CQ41NRK2SZD1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PetDx, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_PetDx, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6B",
       "task_title": "AdminCard_PetDx, Inc.",
       "uei": "J13MZ1AQFWA4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_PEMPal': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_PEMPal': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEI-Bev",
       "task_title": "AdminCard_PEMPal",
       "uei": "FF6TE4LB4218"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_MindImmune Therapeutics Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_MindImmune Therapeutics Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPSMNJU",
       "task_title": "AdminCard_MindImmune Therapeutics Inc",
       "uei": "DDPZS2FUTEK3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Translucence Biosciences, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Translucence Biosciences, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMED",
       "task_title": "AdminCard_Translucence Biosciences, Inc.",
       "uei": "VMEAMDALXAS1"
@@ -6592,73 +6592,73 @@
       "uei": "<strong>TG7HM4HD8594</strong>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_SINTX': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_SINTX': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMB2",
       "task_title": "AdminCard_SINTX",
       "uei": "YPKAG52LF2S9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Somite.Ai': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Somite.Ai': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJERX7F",
       "task_title": "AdminCard_Somite.Ai",
       "uei": "LUQTEDXUEDN1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pandora Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Pandora Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL5U",
       "task_title": "AdminCard_Pandora Bio",
       "uei": "Q9EZE8E3UGF3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Arkana Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Arkana Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABq8XCp",
       "task_title": "AdminCard_Arkana Therapeutics",
       "uei": "Y9ETQF6W9R87"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Repoxegen Tx': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Repoxegen Tx': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRKIF7FC",
       "task_title": "AdminCard_Repoxegen Tx",
       "uei": "VMBPKKEESTN1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_ProxyBio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_ProxyBio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABqrzHx",
       "task_title": "AdminCard_ProxyBio",
       "uei": "HGRBSTDKL8D6"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_UNOMR': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_UNOMR': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABoHXeS",
       "task_title": "AdminCard_UNOMR",
       "uei": "CVF3EZCZD8J9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cervu Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Cervu Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLWH",
       "task_title": "AdminCard_Cervu Inc.",
       "uei": "KED8PDBTFTL3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Microstructure Imaging, Inc. (MICSI)': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Microstructure Imaging, Inc. (MICSI)': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL4B",
       "task_title": "AdminCard_Microstructure Imaging, Inc. (MICSI)",
       "uei": "RHGGAF46SDW9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Evoke Neuroscience, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Evoke Neuroscience, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLYK",
       "task_title": "AdminCard_Evoke Neuroscience, Inc.",
       "uei": "JVCTULAGXAY1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_TearSolutions Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_TearSolutions Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMDR",
       "task_title": "AdminCard_TearSolutions Inc.",
       "uei": "F1NUYVHGJ2E5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_FELIQS': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_FELIQS': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAABnzU1t",
       "task_title": "AdminCard_FELIQS",
       "uei": "DQEGH6EXE7E8"
@@ -6670,109 +6670,109 @@
       "uei": "<strong>RHS3E4BWRJ54\u00a0</strong>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Inanovate': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Inanovate': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL2B",
       "task_title": "AdminCard_Inanovate",
       "uei": "K4DLR58DKLH9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Calaris Diagnostics, Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Calaris Diagnostics, Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEEhrb5",
       "task_title": "AdminCard_Calaris Diagnostics, Inc.",
       "uei": "PVZQKSJHDCQ5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Perikinetics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Perikinetics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL55",
       "task_title": "AdminCard_Perikinetics",
       "uei": "FV33R9Z4ND32"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Amalgent Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Amalgent Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLGW7AZ",
       "task_title": "AdminCard_Amalgent Therapeutics",
       "uei": "CP5VN4N2MXX3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_SingleCell Biotechnology': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_SingleCell Biotechnology': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMBU",
       "task_title": "AdminCard_SingleCell Biotechnology",
       "uei": "K54WEE5SEKJ5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_ResBiotic Nutrition Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_ResBiotic Nutrition Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL7U",
       "task_title": "AdminCard_ResBiotic Nutrition Inc.",
       "uei": "PX8UMQSH5CA5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_LEAH Labs': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_LEAH Labs': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRE37JHS",
       "task_title": "AdminCard_LEAH Labs",
       "uei": "N8JEWCR8XZL4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Akari Therapeutics Plc dba Celsus Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Akari Therapeutics Plc dba Celsus Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLTG",
       "task_title": "AdminCard_Akari Therapeutics Plc dba Celsus Therapeutics",
       "uei": "ZAMFZFW5WA25"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Ichor Sciences': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Ichor Sciences': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZY",
       "task_title": "AdminCard_Ichor Sciences",
       "uei": "F2AKHNEMPEM1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Design-Zyme': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Design-Zyme': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRSAJ3A7",
       "task_title": "AdminCard_Design-Zyme",
       "uei": "RM33XDX5RRG4"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cervello Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Cervello Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPQEMUR",
       "task_title": "AdminCard_Cervello Therapeutics",
       "uei": "C4MBWAFZB3L5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Resero Therapeutics, LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Resero Therapeutics, LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPP6U67",
       "task_title": "AdminCard_Resero Therapeutics, LLC",
       "uei": "RSRBM4G2X5E1"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Cervero Therapeutics, LLC (fka Cervello and Resero)': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Cervero Therapeutics, LLC (fka Cervello and Resero)': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "MAAAAAEHLhZx",
       "task_title": "AdminCard_Cervero Therapeutics, LLC (fka Cervello and Resero)",
       "uei": "UMFRH7KHV7K7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Concordance Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Concordance Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRK2N3IQ",
       "task_title": "AdminCard_Concordance Therapeutics",
       "uei": "VE9YK3T4C5E3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_NoMo Diagnostics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_NoMo Diagnostics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL47",
       "task_title": "AdminCard_NoMo Diagnostics",
       "uei": "JHSMD77AU7W8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Entwine Bio': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Entwine Bio': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLYF",
       "task_title": "AdminCard_Entwine Bio",
       "uei": "VGNAZ4R53Q99"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Endiatx': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Endiatx': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPHSBDD",
       "task_title": "AdminCard_Endiatx",
       "uei": "WZ7NXYMN85J3"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Heligenics Inc.': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Heligenics Inc.': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLZN",
       "task_title": "AdminCard_Heligenics Inc.",
       "uei": "LLRUZMQ7HE63"
@@ -6790,61 +6790,61 @@
       "uei": "N/A"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Therabionic': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Therabionic': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMDZ",
       "task_title": "AdminCard_Therabionic",
       "uei": "UZNLPCNL7XR5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Pherin Pharmaceuticals': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Pherin Pharmaceuticals': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6G",
       "task_title": "AdminCard_Pherin Pharmaceuticals",
       "uei": "UCAHXWJ4LPP8"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Gordian Biotechnology': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Gordian Biotechnology': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPME3LW",
       "task_title": "AdminCard_Gordian Biotechnology",
       "uei": "E9HQBLLJ39C5"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Syncromune Inc': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Syncromune Inc': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWMDH",
       "task_title": "AdminCard_Syncromune Inc",
       "uei": "Q66JGKJAFGX9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Paretor LLC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Paretor LLC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRPI54L2",
       "task_title": "AdminCard_Paretor LLC",
       "uei": "F5FUP75EKAU9"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Captura': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Captura': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRLJO6C6",
       "task_title": "AdminCard_Captura",
       "uei": "T6PSMQ2K4JJ7"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Evommune': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Evommune': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWLYM",
       "task_title": "AdminCard_Evommune",
       "uei": "J3W4V7YFDK46"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Bullfrog AI Holdings INC': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Bullfrog AI Holdings INC': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRGXPE6N",
       "task_title": "AdminCard_Bullfrog AI Holdings INC",
       "uei": "SEE3K84LNF83"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Peak Diagnostics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Peak Diagnostics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL54",
       "task_title": "AdminCard_Peak Diagnostics",
       "uei": "UPWHAYPCDB49"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Protein Architects': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Protein Architects': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRJEWL6W",
       "task_title": "AdminCard_Protein Architects",
       "uei": "YBRASEDJJQ15"
@@ -6856,7 +6856,7 @@
       "uei": "<em>LKBWY858URA9</em>"
     },
     {
-      "reason": "USASpending 422 for 'AdminCard_Surf Therapeutics': {\"message\":\"'award_type_codes' must only contain types from one group.\",\"award_type_groups\":{\"contracts\":{\"A\":\"BPA Call\",\"B\":\"Purchase Order\",\"C\":\"Delivery Order\",\"D\":\"Definitive Contract\"},\"loans\":{\"",
+      "reason": "USASpending fetch failed for 'AdminCard_Surf Therapeutics': RemoteProtocolError('Server disconnected without sending a response.')",
       "task_id": "IEAFXTW5KRR6U24M",
       "task_title": "AdminCard_Surf Therapeutics",
       "uei": "HPXJDDUNVJY8"
