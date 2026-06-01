@@ -40,6 +40,18 @@ jobs:
       - name: Install
         run: pip install -e .
 
+      - name: List Wrike spaces (diagnostic)
+        env:
+          WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
+          WRIKE_BASE_URL: ${{ vars.WRIKE_BASE_URL }}
+        run: |
+          echo "::group::Wrike spaces visible to this token"
+          noa-finder list-spaces
+          echo "::endgroup::"
+          echo "::group::Wrike custom fields visible to this token"
+          noa-finder list-custom-fields
+          echo "::endgroup::"
+
       - name: Generate report
         env:
           WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
