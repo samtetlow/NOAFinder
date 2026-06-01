@@ -17,6 +17,9 @@ AWARD_TYPE_GROUPS: list[list[str]] = [
     ["09", "11"],                 # other financial assistance
 ]
 
+# Field list requested back from USASpending for each award. These names are
+# valid for all 5 award_type_codes groups (contracts share the same Recipient
+# Name / Award Amount / Total Outlays as grants).
 AWARD_FIELDS = [
     "Award ID",
     "Recipient Name",
@@ -60,6 +63,10 @@ class USASpendingClient:
         award_type_codes: list[str],
         page_size: int,
     ) -> Iterator[dict[str, Any]]:
+        # Sort is intentionally omitted. USASpending's sort field names differ
+        # by award_type_codes group (e.g. "Award Amount" is valid for contracts
+        # but rejected for some other groups with 400 "Sort value not found").
+        # We re-sort client-side in report.build_report after merging groups.
         page = 1
         while True:
             body = {
@@ -70,8 +77,6 @@ class USASpendingClient:
                 "fields": AWARD_FIELDS,
                 "page": page,
                 "limit": page_size,
-                "sort": "Award Amount",
-                "order": "desc",
             }
             r = self._http.post("/search/spending_by_award/", json=body)
             r.raise_for_status()
