@@ -4,6 +4,12 @@ on:
   schedule:
     # Daily at 07:00 UTC (3 AM ET in EDT, 2 AM ET in EST).
     - cron: "0 7 * * *"
+  push:
+    branches: [main]
+    # Avoid an infinite loop: the bot itself commits back to report.json.
+    paths-ignore:
+      - "web/public/data/report.json"
+      - "**/*.md"
   workflow_dispatch:
     inputs:
       space_id:
