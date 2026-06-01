@@ -58,6 +58,10 @@ function flattenReport(report: Report): DashboardRow[] {
   return rows;
 }
 
+function hasAward(r: DashboardRow): boolean {
+  return r.award_id !== null;
+}
+
 function sortRows(
   rows: DashboardRow[],
   key: SortKey,
@@ -66,6 +70,8 @@ function sortRows(
   const sorted = [...rows];
   if (key === "current_pm") {
     sorted.sort((a, b) => {
+      // Awards-first across the table.
+      if (hasAward(a) !== hasAward(b)) return hasAward(a) ? -1 : 1;
       const av = a.program_manager || "￿";
       const bv = b.program_manager || "￿";
       const cmp = av.localeCompare(bv);
@@ -73,9 +79,11 @@ function sortRows(
       return (a.task_title || "").localeCompare(b.task_title || "");
     });
   } else {
-    sorted.sort((a, b) =>
-      (a.task_title || "").localeCompare(b.task_title || ""),
-    );
+    sorted.sort((a, b) => {
+      // Awards-first across the table.
+      if (hasAward(a) !== hasAward(b)) return hasAward(a) ? -1 : 1;
+      return (a.task_title || "").localeCompare(b.task_title || "");
+    });
   }
   if (dir === "desc") sorted.reverse();
   return sorted;
