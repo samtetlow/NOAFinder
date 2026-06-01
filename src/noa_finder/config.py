@@ -50,10 +50,13 @@ def load_config() -> Config:
         )
     return Config(
         wrike_token=token,
-        wrike_base_url=os.environ.get(
-            "WRIKE_BASE_URL", "https://www.wrike.com/api/v4"
+        wrike_base_url=(
+            os.environ.get("WRIKE_BASE_URL", "").strip()
+            or "https://www.wrike.com/api/v4"
         ).rstrip("/"),
-        wrike_uei_field_name=os.environ.get("WRIKE_UEI_FIELD_NAME", "uei"),
+        wrike_uei_field_name=(
+            os.environ.get("WRIKE_UEI_FIELD_NAME", "").strip() or "uei"
+        ),
         wrike_program_manager_field_name=os.environ.get(
             "WRIKE_PM_FIELD_NAME", ""
         ).strip() or None,
@@ -63,10 +66,13 @@ def load_config() -> Config:
         wrike_project_title_field_name=os.environ.get(
             "WRIKE_PROJECT_TITLE_FIELD_NAME", ""
         ).strip() or None,
-        usaspending_base_url=os.environ.get(
-            "USASPENDING_BASE_URL", "https://api.usaspending.gov/api/v2"
+        usaspending_base_url=(
+            os.environ.get("USASPENDING_BASE_URL", "").strip()
+            or "https://api.usaspending.gov/api/v2"
         ).rstrip("/"),
-        request_timeout=float(os.environ.get("REQUEST_TIMEOUT", "30")),
+        request_timeout=float(
+            os.environ.get("REQUEST_TIMEOUT", "").strip() or "30"
+        ),
     )
 
 
@@ -85,13 +91,15 @@ def load_notify_config() -> NotifyConfig:
     return NotifyConfig(
         slack_webhook_url=os.environ.get("SLACK_WEBHOOK_URL", "").strip() or None,
         smtp_host=os.environ.get("SMTP_HOST", "").strip() or None,
-        smtp_port=int(os.environ.get("SMTP_PORT", "587")),
+        smtp_port=int(os.environ.get("SMTP_PORT", "").strip() or "587"),
         smtp_username=os.environ.get("SMTP_USERNAME", "").strip() or None,
         smtp_password=os.environ.get("SMTP_PASSWORD") or None,
         smtp_use_tls=_bool(os.environ.get("SMTP_USE_TLS", ""), True),
         email_from=os.environ.get("EMAIL_FROM", "").strip() or None,
         email_to=_split_csv(os.environ.get("EMAIL_TO", "")),
-        digest_timezone=os.environ.get("DIGEST_TIMEZONE", "America/New_York"),
+        digest_timezone=(
+            os.environ.get("DIGEST_TIMEZONE", "").strip() or "America/New_York"
+        ),
         digest_send_when_empty=_bool(
             os.environ.get("DIGEST_SEND_WHEN_EMPTY", ""), True
         ),
