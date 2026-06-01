@@ -7,7 +7,11 @@ import httpx
 
 from ._http import default_transport
 
-_WRIKE_ID_RE = re.compile(r"^[A-Za-z0-9]+$")
+# Wrike v4 IDs are URL-safe base64-ish: alphanumeric plus '-' and '_'.
+# (e.g. "IEAFXTW5I5EXBNPV" for spaces, "MQAAAAEI-A4k" for some folders.)
+# We still reject '/', '..', whitespace, query characters, etc. so this
+# value can be interpolated into URL paths safely.
+_WRIKE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
 TASK_ID_BATCH = 100
 DEFAULT_PAGE_SIZE = 1000
 
@@ -17,7 +21,7 @@ def _validate_wrike_id(value: str, field: str = "id") -> str:
         value = value.strip()
     if not isinstance(value, str) or not _WRIKE_ID_RE.match(value):
         raise ValueError(
-            f"Invalid Wrike {field}: must be alphanumeric, got {value!r}"
+            f"Invalid Wrike {field}: must match [A-Za-z0-9_-]+, got {value!r}"
         )
     return value
 
