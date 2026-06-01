@@ -1,4 +1,4 @@
-name: Wrike debug — list spaces & custom fields
+name: Wrike debug
 
 # Run this manually from the Actions tab to see the API IDs and field
 # names your Wrike token has access to. Useful when WRIKE_SPACE_ID
@@ -25,7 +25,7 @@ jobs:
       - name: Install
         run: pip install -e .
 
-      - name: List Wrike spaces (API IDs and titles)
+      - name: List Wrike spaces
         env:
           WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
           WRIKE_BASE_URL: ${{ vars.WRIKE_BASE_URL }}
