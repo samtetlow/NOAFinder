@@ -6,14 +6,16 @@ import httpx
 
 from ._http import default_transport
 
-CONTRACT_CODES = ["A", "B", "C", "D"]
-GRANT_CODES = ["02", "03", "04", "05"]
-LOAN_CODES = ["07", "08"]
-DIRECT_PAYMENT_CODES = ["06", "10"]
-OTHER_CODES = ["09", "11"]
-ALL_AWARD_TYPE_CODES = (
-    CONTRACT_CODES + GRANT_CODES + LOAN_CODES + DIRECT_PAYMENT_CODES + OTHER_CODES
-)
+# USASpending requires `award_type_codes` to come from a single group per
+# request (per their /references/data_dictionary). To pull every award type
+# for a recipient we have to issue one search per group and merge the results.
+AWARD_TYPE_GROUPS: list[list[str]] = [
+    ["A", "B", "C", "D"],         # contracts
+    ["02", "03", "04", "05"],     # grants
+    ["07", "08"],                 # loans
+    ["06", "10"],                 # direct payments
+    ["09", "11"],                 # other financial assistance
+]
 
 AWARD_FIELDS = [
     "Award ID",
@@ -52,13 +54,18 @@ class USASpendingClient:
     def __exit__(self, *_: object) -> None:
         self.close()
 
-    def search_awards_by_uei(self, uei: str, page_size: int = 100) -> Iterator[dict[str, Any]]:
+    def _search_one_group(
+        self,
+        uei: str,
+        award_type_codes: list[str],
+        page_size: int,
+    ) -> Iterator[dict[str, Any]]:
         page = 1
         while True:
             body = {
                 "filters": {
                     "recipient_search_text": [uei],
-                    "award_type_codes": ALL_AWARD_TYPE_CODES,
+                    "award_type_codes": award_type_codes,
                 },
                 "fields": AWARD_FIELDS,
                 "page": page,
@@ -79,3 +86,9 @@ class USASpendingClient:
             if not has_next:
                 return
             page += 1
+
+    def search_awards_by_uei(
+        self, uei: str, page_size: int = 100
+    ) -> Iterator[dict[str, Any]]:
+        for group in AWARD_TYPE_GROUPS:
+            yield from self._search_one_group(uei, group, page_size)
