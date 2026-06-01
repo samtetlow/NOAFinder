@@ -55,7 +55,7 @@ def load_config() -> Config:
             or "https://www.wrike.com/api/v4"
         ).rstrip("/"),
         wrike_uei_field_name=(
-            os.environ.get("WRIKE_UEI_FIELD_NAME", "").strip() or "uei"
+            os.environ.get("WRIKE_UEI_FIELD_NAME", "").strip() or "UEI"
         ),
         wrike_program_manager_field_name=os.environ.get(
             "WRIKE_PM_FIELD_NAME", ""
