@@ -37,6 +37,9 @@ jobs:
         env:
           WRIKE_TOKEN: ${{ secrets.WRIKE_TOKEN }}
           WRIKE_UEI_FIELD_NAME: ${{ vars.WRIKE_UEI_FIELD_NAME }}
+          WRIKE_PM_FIELD_NAME: ${{ vars.WRIKE_PM_FIELD_NAME }}
+          WRIKE_GRANT_NUMBER_FIELD_NAME: ${{ vars.WRIKE_GRANT_NUMBER_FIELD_NAME }}
+          WRIKE_PROJECT_TITLE_FIELD_NAME: ${{ vars.WRIKE_PROJECT_TITLE_FIELD_NAME }}
           SPACE_ID: ${{ inputs.space_id || secrets.WRIKE_SPACE_ID }}
         run: noa-finder build-report "$SPACE_ID" --output web/public/data/report.json
 
