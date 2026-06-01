@@ -13,6 +13,8 @@ DEFAULT_PAGE_SIZE = 1000
 
 
 def _validate_wrike_id(value: str, field: str = "id") -> str:
+    if isinstance(value, str):
+        value = value.strip()
     if not isinstance(value, str) or not _WRIKE_ID_RE.match(value):
         raise ValueError(
             f"Invalid Wrike {field}: must be alphanumeric, got {value!r}"
@@ -75,7 +77,7 @@ class WrikeClient:
             return data[0]["id"]
 
     def list_folder_tasks(self, folder_id: str) -> list[dict[str, Any]]:
-        _validate_wrike_id(folder_id, "folder_id")
+        folder_id = _validate_wrike_id(folder_id, "folder_id")
         results: list[dict[str, Any]] = []
         next_token: str | None = None
         while True:
@@ -110,7 +112,7 @@ class WrikeClient:
                 return results
 
     def list_space_folders(self, space_id: str) -> list[dict[str, Any]]:
-        _validate_wrike_id(space_id, "space_id")
+        space_id = _validate_wrike_id(space_id, "space_id")
         r = self._http.get(
             f"/spaces/{space_id}/folders", params={"descendants": "true"}
         )
@@ -125,7 +127,7 @@ class WrikeClient:
         return list(seen.values())
 
     def get_task(self, task_id: str) -> dict[str, Any]:
-        _validate_wrike_id(task_id, "task_id")
+        task_id = _validate_wrike_id(task_id, "task_id")
         params = {"fields": "[customFields,parentIds,subTaskIds]"}
         r = self._http.get(f"/tasks/{task_id}", params=params)
         r.raise_for_status()
@@ -139,11 +141,10 @@ class WrikeClient:
     ) -> list[dict[str, Any]]:
         if not task_ids:
             return []
-        for tid in task_ids:
-            _validate_wrike_id(tid, "task_id")
+        cleaned = [_validate_wrike_id(tid, "task_id") for tid in task_ids]
         results: list[dict[str, Any]] = []
-        for i in range(0, len(task_ids), TASK_ID_BATCH):
-            chunk = task_ids[i : i + TASK_ID_BATCH]
+        for i in range(0, len(cleaned), TASK_ID_BATCH):
+            chunk = cleaned[i : i + TASK_ID_BATCH]
             r = self._http.get(
                 f"/tasks/{','.join(chunk)}", params={"fields": fields}
             )
@@ -168,7 +169,7 @@ class WrikeClient:
         folder_id: str | None = None,
         custom_fields: list[dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
-        _validate_wrike_id(parent_task_id, "task_id")
+        parent_task_id = _validate_wrike_id(parent_task_id, "task_id")
         if folder_id is None:
             parent = self.get_task(parent_task_id)
             parent_ids = parent.get("parentIds") or []
@@ -178,7 +179,7 @@ class WrikeClient:
                     "subtask. Move the task into a folder/project first."
                 )
             folder_id = parent_ids[0]
-        _validate_wrike_id(folder_id, "folder_id")
+        folder_id = _validate_wrike_id(folder_id, "folder_id")
         body: dict[str, Any] = {
             "title": title,
             "description": description,
