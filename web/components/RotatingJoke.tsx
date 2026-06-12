@@ -3,66 +3,63 @@
 import { useEffect, useState } from "react";
 
 const JOKES = [
-  // Federal program officers
-  "I asked the program officer for an extension. They gave me a fiscal year.",
-  "How many program officers does it take to change a lightbulb? Depends on which fiscal year we’re in.",
-  "My program officer left for industry. The new one asked what an SBIR was.",
-  "What did the program officer say to the late proposal? Better late than 90 days from now.",
-  "My program officer asked for a one-pager. I sent a 47-page narrative. She thanked me for the brevity.",
-  "A program officer walks into a bar. The bartender asks what she wants. She says, ‘Whatever’s aligned with the funding priorities.’",
+  // Self-deprecating one-liners
+  "I'm not crying. I just opened the formatting requirements.",
+  "What's a grant writer's favorite color? Beige.",
+  "Don't trust anyone who says 'just one more revision.'",
+  "My Gantt chart hates me back.",
+  "What do you call a grant writer who's on time? Unemployed.",
+  "I'd explain what I do, but you'd leave.",
+  "I tried to put 'attended every status meeting' on my resume. The recruiter laughed.",
+  "What do you call a startup founder applying to NIH? Optimistic.",
+  "Three things are certain in life: death, taxes, and a reviewer asking about scalability.",
 
-  // Proposals & boilerplate
-  "My proposal said it needed more buzzwords. It came back synergized.",
-  "My grant was rejected for being too clear. The reviewer said the boilerplate felt thin.",
-  "I read the FOA three times. It still doesn’t match the SOW.",
-  "I wrote a 25-page management plan for a 6-month project. The Gantt chart had its own Gantt chart.",
-  "I tried to compress my technical narrative. It came back asking for more figures.",
-  "My proposal got Highly Meritorious. So did 137 others. Only 12 were funded.",
-  "Why did the proposal use Comic Sans? The reviewer asked the same question.",
-  "What do you call a proposal with no win theme? A novella.",
-  "Why did the grant writer get fired? She used active voice.",
-  "Confidence is going into a Phase II review with the same slide deck you used in Phase I.",
-  "My SBIR commercialization plan says: pivot. To what? I don’t know yet. That’s the pivot.",
+  // Setup + punchline
+  "I asked my therapist if I should quit grant writing. She said let's set realistic milestones.",
+  "I told my dentist I'm a grant writer. He just nodded and started drilling.",
+  "My boss said the proposal needs more white space. I sent him thirty pages of margins.",
+  "My five-year-old asked what I do. I told her I help scientists ask the government for money. She asked if I ever get it. I said sometimes. She said we should pray.",
+  "I told someone at a party I work in federal contracts. They went to get another drink and never came back. It's now my icebreaker.",
+  "Three reviewers walked into a panel. Two recommended not funding. The third wrote a haiku.",
+  "How do you make a contracting officer laugh? Tell them your timeline.",
+  "What's a contracting officer's spirit animal? A pause button.",
+  "What's a federal contractor's favorite drink? Whatever the per diem allows.",
+  "Why don't statisticians get hired into capture? Their confidence intervals are too honest.",
+  "Why did the cybersecurity grant cross the road? It was the only path through the firewall.",
 
-  // Contracting & compliance
-  "A federal contract walks into a bar. The bartender says: I’ll be with you in 30 to 90 days.",
-  "I asked the contracting officer for clarification. She quoted FAR 52.212-4 and walked away.",
-  "What did the OMB say to the cost proposal? You spelled ‘reasonable’ wrong.",
-  "I forgot to register on SAM.gov. The error message felt personal.",
-  "Why did the proposal cross the road? Because the SAM.gov registration expired on the other side.",
-  "I tried to claim small business status. The certifications form had 14 questions about size.",
-  "My SBIR Phase I budget had a typo. Now I’m a millionaire on paper and bankrupt in reality.",
-  "What’s the smallest unit of government time? A ‘shortly.’",
-  "What’s a contractor’s favorite holiday? End of fiscal year — also their least favorite.",
-  "What’s the difference between a deadline and a suggestion? About 11:59 PM Eastern.",
-  "I tried to explain TRL levels at Thanksgiving. My uncle thought I said ‘truffle.’",
+  // Observational
+  "Inside every clarification is a third instruction.",
+  "Federal procurement: where 'simplified' means forty-two pages.",
+  "The grants.gov UI is intuitive — if you've been using it since 2003.",
+  "Inside every RFP is an instruction that contradicts a previous instruction.",
+  "Federal acronym soup: where one of the ingredients is also called 'soup.'",
+  "The agency posted a Q&A document. Forty-seven questions. Every answer is 'see Section H.'",
+  "I read the FOA. I read the SOW. They are not friends.",
+  "I read a 200-page solicitation in one sitting. My optometrist sends his regards.",
+  "A 'short response' from a federal agency is between fourteen days and the heat death of the universe.",
+  "Apparently 'aggressive timeline' and 'feasible timeline' are different things. I am informed of this. Three years later.",
 
-  // Capture & BD
-  "I told my capture manager I needed to do more BD. So I bought a dishwasher.",
-  "Why did the BD pipeline get clogged? It was full of dead leads pretending to be qualified.",
-  "The reviewer said my pitch deck was ‘visionary.’ Two weeks later: rejected.",
-  "I asked Falcon to predict my win probability. It said ‘inconclusive but encouraging.’",
-  "My capture plan said: identify decision-makers. I identified seven. None of them returned my email.",
+  // Lived experience
+  "I once submitted a perfect proposal. The reviewer wrote 'felt rushed.'",
+  "The reviewer wrote 'great work.' I got a 4 out of 10. I went home.",
+  "My capture team identified three decision-makers. Two have retired. One was a typo.",
+  "I had a great idea in the shower. By the time I sat down, it was a bullet point. By the time I opened Word, it was an acronym.",
+  "I attended a 90-minute kickoff. Twenty minutes were the kickoff. Seventy were people clarifying which kickoff.",
+  "My favorite part of the proposal is the cover letter. Everyone else's favorite part is the cover letter — because it's the only part they read.",
+  "I worked through the weekend on a proposal. The agency canceled the FOA Monday morning.",
+  "Three months of capture. Two hours of writing. One typo. Zero stars.",
+  "Confidence is going into a Phase II review with a slide that says 'we still don't know how this works.'",
+  "My SBIR Commercialization Plan says TBD. My investor pitch also says TBD. At least they match.",
+  "I asked AI to write my technical narrative. It hallucinated. The reviewer said it 'felt fresh.'",
+  "I wrote a perfect Specific Aims page. It took eight years and the loss of three relationships.",
 
-  // Reviewers, panels & odds
-  "Why don’t grant writers gamble? Every odds calculation includes ‘subject to availability of funds.’",
-  "What’s the difference between Phase I and Phase II? A nervous breakdown and a year.",
-  "What does NIH stand for? Never Indicate Hubris.",
-  "I tried to align my deliverables with my milestones. Now neither of them speak to me.",
-  "I tried to explain my work breakdown structure. They asked if I meant my mental state.",
-
-  // Workplace & general
+  // Universal dad-energy jokes (palate cleansers)
+  "I'm reading a book about anti-gravity. It's impossible to put down.",
+  "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+  "Parallel lines have so much in common — it's a shame they'll never meet.",
   "Why did the scarecrow win an award? He was outstanding in his field.",
-  "Why don’t scientists trust atoms? They make up everything — unlike the indirect rate.",
-  "Parallel lines have a lot in common. It’s a shame the appropriations committee will never let them meet.",
-  "I optimized my CV for federal Form 365. Now LinkedIn thinks I’m dead.",
-  "I emailed grants.gov support. They emailed back asking if I’d tried emailing grants.gov support.",
-  "Why don’t biotech founders sleep? Their burn rate is faster than the FDA review cycle.",
-
-  // Data, tooling, the existential
-  "USASpending.gov walks into a bar. The bartender says: come back when your data has been indexed.",
-  "I asked Wrike to summarize my workload. It returned a Gantt chart of my regrets.",
-  "My burn rate exceeded my comprehension rate sometime last Tuesday.",
+  "How do you organize a space party? You planet.",
+  "Why don't scientists trust atoms? They make up everything.",
 ];
 
 export function RotatingJoke() {
