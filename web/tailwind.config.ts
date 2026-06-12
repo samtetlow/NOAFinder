@@ -8,7 +8,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand navy from the Grant Engine logo.
         brand: {
           DEFAULT: "#1B1B3D",
           ink: "#0E0E26",
@@ -17,7 +16,16 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["system-ui", "-apple-system", "Segoe UI", "Helvetica", "Arial", "sans-serif"],
+        sans: [
+          "var(--font-lato)",
+          "Lato",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
     },
   },
