@@ -6,7 +6,7 @@ import { signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import { APPS, type MainApp } from "@/lib/apps";
+import { APPS, type MainApp, type SubApp } from "@/lib/apps";
 
 interface SidebarProps {
   userEmail?: string | null;
@@ -49,7 +49,7 @@ export function Sidebar({ userEmail }: SidebarProps) {
       </Link>
 
       <nav className="flex-1 px-2 py-3 space-y-0.5 overflow-y-auto">
-        <SidebarLink href="/" label="Home" active={pathname === "/"} />
+        <InternalLink href="/" label="Home" active={pathname === "/"} />
         <div className="my-2 border-t border-white/10" />
         {APPS.map((app) => (
           <AppNavGroup
@@ -83,7 +83,7 @@ export function Sidebar({ userEmail }: SidebarProps) {
   );
 }
 
-function SidebarLink({
+function InternalLink({
   href,
   label,
   active,
@@ -122,7 +122,7 @@ function AppNavGroup({
     pathname === app.href || pathname.startsWith(app.href + "/");
 
   if (!app.subs) {
-    return <SidebarLink href={app.href} label={app.title} active={isActive} />;
+    return <InternalLink href={app.href} label={app.title} active={isActive} />;
   }
 
   return (
@@ -151,26 +151,54 @@ function AppNavGroup({
       {isOpen ? (
         <div className="ml-3 mt-0.5 mb-1 space-y-0.5 border-l border-white/10 pl-3">
           {app.subs.map((sub) => (
-            <Link
-              key={sub.slug}
-              href={sub.href}
-              className={
-                "block px-3 py-1.5 rounded text-sm transition " +
-                (pathname === sub.href
-                  ? "bg-white/15 text-white"
-                  : "text-white/70 hover:bg-white/5 hover:text-white")
-              }
-            >
-              {sub.title}
-              {sub.comingSoon ? (
-                <span className="ml-2 text-[10px] uppercase tracking-wide text-white/40">
-                  soon
-                </span>
-              ) : null}
-            </Link>
+            <SubLink key={sub.slug} sub={sub} active={pathname === sub.href} />
           ))}
         </div>
       ) : null}
     </div>
+  );
+}
+
+function SubLink({ sub, active }: { sub: SubApp; active: boolean }) {
+  const baseCls =
+    "flex items-center justify-between gap-2 px-3 py-1.5 rounded text-sm transition " +
+    (active
+      ? "bg-white/15 text-white"
+      : "text-white/70 hover:bg-white/5 hover:text-white");
+
+  const labelAndBadges = (
+    <>
+      <span>{sub.title}</span>
+      <span className="flex items-center gap-1.5">
+        {sub.comingSoon ? (
+          <span className="text-[10px] uppercase tracking-wide text-white/40">
+            soon
+          </span>
+        ) : null}
+        {sub.external ? (
+          <span className="text-[10px] text-white/50" aria-hidden>
+            ↗
+          </span>
+        ) : null}
+      </span>
+    </>
+  );
+
+  if (sub.external) {
+    return (
+      <a
+        href={sub.href}
+        target="_blank"
+        rel="noreferrer"
+        className={baseCls}
+      >
+        {labelAndBadges}
+      </a>
+    );
+  }
+  return (
+    <Link href={sub.href} className={baseCls}>
+      {labelAndBadges}
+    </Link>
   );
 }

@@ -4,6 +4,11 @@ export interface SubApp {
   href: string;
   description?: string;
   comingSoon?: boolean;
+  // True when href points to an app hosted outside the launchpad codebase.
+  // The sidebar and tile grid render external entries as <a target="_blank">
+  // with a visual indicator, and any in-launchpad page at the corresponding
+  // path redirects to the external URL so bookmarks still resolve.
+  external?: boolean;
 }
 
 export interface MainApp {
@@ -12,6 +17,7 @@ export interface MainApp {
   href: string;
   description?: string;
   comingSoon?: boolean;
+  external?: boolean;
   subs?: SubApp[];
 }
 
@@ -108,10 +114,10 @@ export const APPS: MainApp[] = [
       {
         slug: "training-records",
         title: "Training Records",
-        href: "/training-and-development/training-records",
-        comingSoon: true,
+        href: "https://ascend.grantengine.com",
+        external: true,
         description:
-          "Per-person training history and certification expirations.",
+          "Per-person training history and certification attestations. Hosted on Ascend.",
       },
     ],
   },

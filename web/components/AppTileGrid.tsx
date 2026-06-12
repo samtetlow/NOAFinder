@@ -7,6 +7,7 @@ interface AppTile {
   description?: string;
   href: string;
   comingSoon?: boolean;
+  external?: boolean;
 }
 
 export function AppTileGrid({
@@ -23,27 +24,48 @@ export function AppTileGrid({
   return (
     <div className={gridCls}>
       {tiles.map((t) => (
-        <Link
-          key={t.href}
-          href={t.href}
-          className="block rounded-xl bg-white border border-brand/10 p-5 hover:border-brand/40 hover:shadow-md transition"
-        >
-          <div className="flex items-start justify-between gap-3">
-            <div className="text-lg font-semibold text-brand-ink">
-              {t.title}
-            </div>
-            {t.comingSoon ? (
-              <span className="text-[10px] uppercase tracking-wide bg-brand/5 text-brand px-2 py-0.5 rounded">
-                Soon
-              </span>
-            ) : null}
-          </div>
-          {t.description ? (
-            <p className="text-sm text-brand/60 mt-2">{t.description}</p>
-          ) : null}
-        </Link>
+        <Tile key={t.href} tile={t} />
       ))}
     </div>
+  );
+}
+
+function Tile({ tile }: { tile: AppTile }) {
+  const cardCls =
+    "block rounded-xl bg-white border border-brand/10 p-5 hover:border-brand/40 hover:shadow-md transition";
+  const inner = (
+    <>
+      <div className="flex items-start justify-between gap-3">
+        <div className="text-lg font-semibold text-brand-ink">
+          {tile.title}
+          {tile.external ? (
+            <span className="ml-1 text-xs text-brand/50" aria-hidden>
+              ↗
+            </span>
+          ) : null}
+        </div>
+        {tile.comingSoon ? (
+          <span className="text-[10px] uppercase tracking-wide bg-brand/5 text-brand px-2 py-0.5 rounded">
+            Soon
+          </span>
+        ) : null}
+      </div>
+      {tile.description ? (
+        <p className="text-sm text-brand/60 mt-2">{tile.description}</p>
+      ) : null}
+    </>
+  );
+  if (tile.external) {
+    return (
+      <a href={tile.href} target="_blank" rel="noreferrer" className={cardCls}>
+        {inner}
+      </a>
+    );
+  }
+  return (
+    <Link href={tile.href} className={cardCls}>
+      {inner}
+    </Link>
   );
 }
 
@@ -53,6 +75,7 @@ export function mainAppsToTiles(apps: MainApp[]): AppTile[] {
     description: a.description,
     href: a.href,
     comingSoon: a.comingSoon,
+    external: a.external,
   }));
 }
 
@@ -62,5 +85,6 @@ export function subAppsToTiles(subs: SubApp[]): AppTile[] {
     description: s.description,
     href: s.href,
     comingSoon: s.comingSoon,
+    external: s.external,
   }));
 }
