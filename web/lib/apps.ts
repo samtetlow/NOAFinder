@@ -99,6 +99,22 @@ export const APPS: MainApp[] = [
       },
     ],
   },
+  {
+    slug: "training-and-development",
+    title: "Training & Development",
+    href: "/training-and-development",
+    description: "Onboarding, certifications, and team development.",
+    subs: [
+      {
+        slug: "training-records",
+        title: "Training Records",
+        href: "/training-and-development/training-records",
+        comingSoon: true,
+        description:
+          "Per-person training history and certification expirations.",
+      },
+    ],
+  },
 ];
 
 export function findApp(
